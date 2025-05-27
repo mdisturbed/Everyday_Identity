@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Policy on Everyday Identity</title>
+    <link>http://localhost:1313/tags/policy/</link>
+    <description>Recent content in Policy on Everyday Identity</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Mar 2025 20:47:10 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/policy/index.xml" rel="self" type="application/rss" />
+    <item>
+      <title>Comprehensive Password and 2FA Identity Policy</title>
+      <link>http://localhost:1313/2025/03/comprehensive-password-and-2fa-identity-policy/</link>
+      <pubDate>Sun, 30 Mar 2025 20:47:10 -0400</pubDate>
+      <guid>http://localhost:1313/2025/03/comprehensive-password-and-2fa-identity-policy/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/post_two.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;password-requirements&#34;&gt;Password Requirements&lt;/h2&gt;
+&lt;h3 id=&#34;password-composition&#34;&gt;Password Composition&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Minimum Length&lt;/strong&gt;: All passwords must be at least 12 characters long. Longer passwords (16+ characters) are strongly encouraged.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Character Requirements&lt;/strong&gt;: Passwords must include at least:
+&lt;ul&gt;
+&lt;li&gt;One uppercase letter (A-Z)&lt;/li&gt;
+&lt;li&gt;One lowercase letter (a-z)&lt;/li&gt;
+&lt;li&gt;One numeric digit (0-9)&lt;/li&gt;
+&lt;li&gt;One special character (e.g., !@#$%^&amp;amp;*()_+-=[]{}|;:&amp;rsquo;&amp;quot;,.&amp;lt;&amp;gt;/?`~)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Complexity Enforcement&lt;/strong&gt;: Password creation systems must validate these requirements in real-time and provide feedback to users.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dictionary Word Prevention&lt;/strong&gt;: Passwords cannot consist solely of common dictionary words, regardless of character substitutions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;password-restrictions&#34;&gt;Password Restrictions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Personal Information&lt;/strong&gt;: Passwords must not contain:
+&lt;ul&gt;
+&lt;li&gt;User&amp;rsquo;s first or last name&lt;/li&gt;
+&lt;li&gt;Username or email address&lt;/li&gt;
+&lt;li&gt;Employee ID number&lt;/li&gt;
+&lt;li&gt;Date of birth (in any format)&lt;/li&gt;
+&lt;li&gt;Phone numbers&lt;/li&gt;
+&lt;li&gt;Sequential characters (e.g., &amp;ldquo;12345&amp;rdquo;, &amp;ldquo;abcde&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;Repeating characters (e.g., &amp;ldquo;aaaaa&amp;rdquo;, &amp;ldquo;11111&amp;rdquo;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password History&lt;/strong&gt;: Users cannot reuse any of their previous 5 passwords.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password Aging&lt;/strong&gt;: Passwords must be changed every 90 days.
+&lt;ul&gt;
+&lt;li&gt;Users will receive notifications 14 days before expiration.&lt;/li&gt;
+&lt;li&gt;Grace period of 3 days after expiration before mandatory reset.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Historical Records&lt;/strong&gt;: Password history will be maintained for 12 months for audit purposes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;password-storage-and-transmission&#34;&gt;Password Storage and Transmission&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;All passwords must be stored using industry-standard cryptographic hashing algorithms (e.g., bcrypt, Argon2).&lt;/li&gt;
+&lt;li&gt;Plain text passwords must never be stored in any system or database.&lt;/li&gt;
+&lt;li&gt;Password transmission must occur only over encrypted connections (HTTPS, TLS).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;two-factor-authentication-2fa&#34;&gt;Two-Factor Authentication (2FA)&lt;/h2&gt;
+&lt;h3 id=&#34;2fa-implementation&#34;&gt;2FA Implementation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mandatory Requirement&lt;/strong&gt;: 2FA is required for all user accounts accessing company systems.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Initial Setup&lt;/strong&gt;: 2FA must be configured during the initial account creation process before access is granted.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Grace Period&lt;/strong&gt;: New users have a maximum 24-hour grace period to complete 2FA setup.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enforcement&lt;/strong&gt;: Systems must technically enforce 2FA; it cannot be bypassed by standard users.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;supported-2fa-methods&#34;&gt;Supported 2FA Methods&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Primary Methods&lt;/strong&gt; (in order of preference):
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Authenticator Applications&lt;/strong&gt;: TOTP-based applications such as Microsoft Authenticator, Google Authenticator, Authy, or other compatible apps.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hardware Security Keys&lt;/strong&gt;: FIDO2/WebAuthn compliant devices (e.g., YubiKey, Titan Security Key) are required for administrator accounts and strongly recommended for all users.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SMS Verification&lt;/strong&gt;: Only permitted when other methods are unavailable due to hardware limitations. Subject to additional verification of phone number ownership.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email Verification&lt;/strong&gt;: Least preferred method, only available as a last resort with documented approval.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2fa-management&#34;&gt;2FA Management&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Recovery Options&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Users must generate and securely store backup recovery codes during initial 2FA setup.&lt;/li&gt;
+&lt;li&gt;Recovery codes must be single-use and regenerated after use.&lt;/li&gt;
+&lt;li&gt;A minimum of 10 recovery codes must be provided to each user.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Device Management&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Users must register all devices accessing company systems.&lt;/li&gt;
+&lt;li&gt;Maximum of 5 trusted devices per user.&lt;/li&gt;
+&lt;li&gt;Devices must be re-verified every 180 days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2FA Resets&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Reset requests require identity verification through multiple channels.&lt;/li&gt;
+&lt;li&gt;Reset approval requires documented manager authorization.&lt;/li&gt;
+&lt;li&gt;All reset actions must be logged for audit purposes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;account-security&#34;&gt;Account Security&lt;/h2&gt;
+&lt;h3 id=&#34;login-protections&#34;&gt;Login Protections&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Failed Attempt Limits&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Maximum of 5 failed login attempts before temporary account lockout.&lt;/li&gt;
+&lt;li&gt;First lockout period is 30 minutes, with escalating timeframes for repeated lockouts.&lt;/li&gt;
+&lt;li&gt;After 3 consecutive lockouts, manual account unlock by IT security personnel is required.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Session Management&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Automatic logout after 15 minutes of user inactivity.&lt;/li&gt;
+&lt;li&gt;Maximum session duration of 8 hours regardless of activity.&lt;/li&gt;
+&lt;li&gt;Concurrent sessions are limited to 2 per user.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notification System&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Users will receive immediate notifications for:
+&lt;ul&gt;
+&lt;li&gt;Successful logins from new devices or locations&lt;/li&gt;
+&lt;li&gt;Failed login attempts&lt;/li&gt;
+&lt;li&gt;Password or 2FA changes&lt;/li&gt;
+&lt;li&gt;Account lockouts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Notifications will be sent via email and in-app alerts when possible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;risk-based-authentication&#34;&gt;Risk-Based Authentication&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Unusual Activity Detection&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Login attempts from new geographic locations trigger additional verification.&lt;/li&gt;
+&lt;li&gt;Time-of-day anomalies require additional authentication steps.&lt;/li&gt;
+&lt;li&gt;Rapid traversal between different geographic IP addresses will trigger security alerts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Device Fingerprinting&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Browser and device characteristics are analyzed for anomalies.&lt;/li&gt;
+&lt;li&gt;Changes in device fingerprints require re-authentication.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;security-logging&#34;&gt;Security Logging&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Comprehensive Audit Trail&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;All authentication events must be logged with the following information:
+&lt;ul&gt;
+&lt;li&gt;Timestamp (in UTC)&lt;/li&gt;
+&lt;li&gt;Username&lt;/li&gt;
+&lt;li&gt;IP address&lt;/li&gt;
+&lt;li&gt;Device information&lt;/li&gt;
+&lt;li&gt;Authentication method used&lt;/li&gt;
+&lt;li&gt;Success/failure status&lt;/li&gt;
+&lt;li&gt;Geographic location&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Logs must be stored in a tamper-evident format.&lt;/li&gt;
+&lt;li&gt;Authentication logs must be retained for a minimum of 12 months.&lt;/li&gt;
+&lt;li&gt;High-privilege account logs must be retained for 24 months.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;user-education-and-training&#34;&gt;User Education and Training&lt;/h2&gt;
+&lt;h3 id=&#34;initial-training&#34;&gt;Initial Training&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Onboarding Requirements&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;All new users must complete a mandatory security training module before receiving system access.&lt;/li&gt;
+&lt;li&gt;Training must cover password security, 2FA setup, phishing awareness, and social engineering defense.&lt;/li&gt;
+&lt;li&gt;Users must pass a knowledge assessment with a minimum score of 80%.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Documentation&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Comprehensive user guides for password management and 2FA setup must be provided.&lt;/li&gt;
+&lt;li&gt;Step-by-step visual instructions for all supported 2FA methods must be accessible in the company knowledge base.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ongoing-education&#34;&gt;Ongoing Education&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Regular Updates&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Quarterly security awareness updates delivered via email and intranet.&lt;/li&gt;
+&lt;li&gt;Mandatory annual refresher training for all users.&lt;/li&gt;
+&lt;li&gt;Targeted training for users who experience security incidents.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security Resources&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Password management tool recommendations and usage guides.&lt;/li&gt;
+&lt;li&gt;Guidelines for creating memorable yet secure passphrases.&lt;/li&gt;
+&lt;li&gt;Instructions for reporting suspected security incidents.&lt;/li&gt;
+&lt;li&gt;FAQ section addressing common authentication issues.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;compliance-monitoring&#34;&gt;Compliance Monitoring&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Training Compliance&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Reports of training completion rates by department.&lt;/li&gt;
+&lt;li&gt;Reminders for users with approaching or overdue training requirements.&lt;/li&gt;
+&lt;li&gt;Escalation to management for employees who fail to complete required training.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Effectiveness Measurement&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Regular simulated phishing campaigns to test user awareness.&lt;/li&gt;
+&lt;li&gt;Analysis of authentication-related help desk tickets to identify training gaps.&lt;/li&gt;
+&lt;li&gt;Annual security knowledge assessment for all users.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;exceptions-and-emergency-access&#34;&gt;Exceptions and Emergency Access&lt;/h2&gt;
+&lt;h3 id=&#34;exception-process&#34;&gt;Exception Process&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Request Procedure&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Formal written request must be submitted to the Information Security team.&lt;/li&gt;
+&lt;li&gt;Request must include business justification, risk assessment, and proposed compensating controls.&lt;/li&gt;
+&lt;li&gt;Approval requires sign-off from:
+&lt;ul&gt;
+&lt;li&gt;Department Manager&lt;/li&gt;
+&lt;li&gt;Information Security Officer&lt;/li&gt;
+&lt;li&gt;IT Director (for exceptions lasting more than 30 days)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Documentation Requirements&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;All exceptions must be documented in the security exception register.&lt;/li&gt;
+&lt;li&gt;Documentation must include scope, duration, justification, and approvals.&lt;/li&gt;
+&lt;li&gt;Exceptions must include an expiration date not exceeding 90 days.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;emergency-access&#34;&gt;Emergency Access&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Break-Glass Procedure&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Designated emergency access accounts for critical systems.&lt;/li&gt;
+&lt;li&gt;Multi-person authorization required for emergency access activation.&lt;/li&gt;
+&lt;li&gt;Tamper-evident seals on physical emergency access credentials.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring and Recovery&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Real-time alerts when emergency access is initiated.&lt;/li&gt;
+&lt;li&gt;Continuous monitoring during emergency access sessions.&lt;/li&gt;
+&lt;li&gt;Mandatory post-incident review within 24 hours.&lt;/li&gt;
+&lt;li&gt;Password and credential rotation after emergency access use.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;regulatory-compliance&#34;&gt;Regulatory Compliance&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Compliance Alignment&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;All exceptions must be evaluated for impact on regulatory compliance.&lt;/li&gt;
+&lt;li&gt;Exceptions affecting regulated data require additional approval from Compliance Officer.&lt;/li&gt;
+&lt;li&gt;Documentation of exceptions must satisfy audit requirements for applicable regulations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Periodic Review&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;All exceptions must be reviewed quarterly.&lt;/li&gt;
+&lt;li&gt;Exceptions must be revoked when no longer necessary.&lt;/li&gt;
+&lt;li&gt;Annual report of exceptions must be provided to executive management.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-and-enforcement&#34;&gt;Implementation and Enforcement&lt;/h2&gt;
+&lt;h3 id=&#34;technical-controls&#34;&gt;Technical Controls&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Password Management Systems&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Enterprise password management solution for secure credential storage.&lt;/li&gt;
+&lt;li&gt;Password policy enforcement through Active Directory or equivalent identity provider.&lt;/li&gt;
+&lt;li&gt;Self-service password reset capability with appropriate identity verification.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2FA Infrastructure&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Centralized 2FA management console for administrators.&lt;/li&gt;
+&lt;li&gt;Integration with single sign-on (SSO) solution where applicable.&lt;/li&gt;
+&lt;li&gt;Backup 2FA servers to ensure high availability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;compliance-monitoring-1&#34;&gt;Compliance Monitoring&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Regular Audits&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Monthly automated scans for accounts not using 2FA.&lt;/li&gt;
+&lt;li&gt;Quarterly review of password policy compliance.&lt;/li&gt;
+&lt;li&gt;Annual penetration testing of authentication systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reporting&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Weekly reports on authentication failures and lockouts.&lt;/li&gt;
+&lt;li&gt;Monthly reports on 2FA adoption and usage.&lt;/li&gt;
+&lt;li&gt;Quarterly compliance reports to management.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;enforcement-measures&#34;&gt;Enforcement Measures&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Non-Compliance Consequences&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Accounts not meeting policy requirements subject to temporary restriction.&lt;/li&gt;
+&lt;li&gt;Repeated non-compliance reported to user&amp;rsquo;s manager.&lt;/li&gt;
+&lt;li&gt;Willful circumvention of security controls subject to disciplinary action.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Technical Enforcement&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Account provisioning dependent on policy compliance.&lt;/li&gt;
+&lt;li&gt;Automated enforcement of password complexity and history.&lt;/li&gt;
+&lt;li&gt;System-level prevention of authentication without 2FA.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;policy-management&#34;&gt;Policy Management&lt;/h2&gt;
+&lt;h3 id=&#34;version-control&#34;&gt;Version Control&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Current version: 1.0&lt;/li&gt;
+&lt;li&gt;Effective date: [Date]&lt;/li&gt;
+&lt;li&gt;Review frequency: Annual or upon significant technology/threat changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;responsibilities&#34;&gt;Responsibilities&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Policy Owner&lt;/strong&gt;: Chief Information Security Officer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Implementation&lt;/strong&gt;: IT Security Team&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compliance Monitoring&lt;/strong&gt;: Security Operations Center&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;User Support&lt;/strong&gt;: IT Help Desk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NIST Special Publication 800-63B: Digital Identity Guidelines&lt;/li&gt;
+&lt;li&gt;ISO/IEC 27001:2013 Annex A.9: Access Control&lt;/li&gt;
+&lt;li&gt;OWASP Authentication Best Practices&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <content:encoded><![CDATA[<p><img alt="Image" loading="lazy" src="/post_two.png"></p>
+<h2 id="password-requirements">Password Requirements</h2>
+<h3 id="password-composition">Password Composition</h3>
+<ul>
+<li><strong>Minimum Length</strong>: All passwords must be at least 12 characters long. Longer passwords (16+ characters) are strongly encouraged.</li>
+<li><strong>Character Requirements</strong>: Passwords must include at least:
+<ul>
+<li>One uppercase letter (A-Z)</li>
+<li>One lowercase letter (a-z)</li>
+<li>One numeric digit (0-9)</li>
+<li>One special character (e.g., !@#$%^&amp;*()_+-=[]{}|;:&rsquo;&quot;,.&lt;&gt;/?`~)</li>
+</ul>
+</li>
+<li><strong>Complexity Enforcement</strong>: Password creation systems must validate these requirements in real-time and provide feedback to users.</li>
+<li><strong>Dictionary Word Prevention</strong>: Passwords cannot consist solely of common dictionary words, regardless of character substitutions.</li>
+</ul>
+<h3 id="password-restrictions">Password Restrictions</h3>
+<ul>
+<li><strong>Personal Information</strong>: Passwords must not contain:
+<ul>
+<li>User&rsquo;s first or last name</li>
+<li>Username or email address</li>
+<li>Employee ID number</li>
+<li>Date of birth (in any format)</li>
+<li>Phone numbers</li>
+<li>Sequential characters (e.g., &ldquo;12345&rdquo;, &ldquo;abcde&rdquo;)</li>
+<li>Repeating characters (e.g., &ldquo;aaaaa&rdquo;, &ldquo;11111&rdquo;)</li>
+</ul>
+</li>
+<li><strong>Password History</strong>: Users cannot reuse any of their previous 5 passwords.</li>
+<li><strong>Password Aging</strong>: Passwords must be changed every 90 days.
+<ul>
+<li>Users will receive notifications 14 days before expiration.</li>
+<li>Grace period of 3 days after expiration before mandatory reset.</li>
+</ul>
+</li>
+<li><strong>Historical Records</strong>: Password history will be maintained for 12 months for audit purposes.</li>
+</ul>
+<h3 id="password-storage-and-transmission">Password Storage and Transmission</h3>
+<ul>
+<li>All passwords must be stored using industry-standard cryptographic hashing algorithms (e.g., bcrypt, Argon2).</li>
+<li>Plain text passwords must never be stored in any system or database.</li>
+<li>Password transmission must occur only over encrypted connections (HTTPS, TLS).</li>
+</ul>
+<h2 id="two-factor-authentication-2fa">Two-Factor Authentication (2FA)</h2>
+<h3 id="2fa-implementation">2FA Implementation</h3>
+<ul>
+<li><strong>Mandatory Requirement</strong>: 2FA is required for all user accounts accessing company systems.</li>
+<li><strong>Initial Setup</strong>: 2FA must be configured during the initial account creation process before access is granted.</li>
+<li><strong>Grace Period</strong>: New users have a maximum 24-hour grace period to complete 2FA setup.</li>
+<li><strong>Enforcement</strong>: Systems must technically enforce 2FA; it cannot be bypassed by standard users.</li>
+</ul>
+<h3 id="supported-2fa-methods">Supported 2FA Methods</h3>
+<ul>
+<li><strong>Primary Methods</strong> (in order of preference):
+<ol>
+<li><strong>Authenticator Applications</strong>: TOTP-based applications such as Microsoft Authenticator, Google Authenticator, Authy, or other compatible apps.</li>
+<li><strong>Hardware Security Keys</strong>: FIDO2/WebAuthn compliant devices (e.g., YubiKey, Titan Security Key) are required for administrator accounts and strongly recommended for all users.</li>
+<li><strong>SMS Verification</strong>: Only permitted when other methods are unavailable due to hardware limitations. Subject to additional verification of phone number ownership.</li>
+<li><strong>Email Verification</strong>: Least preferred method, only available as a last resort with documented approval.</li>
+</ol>
+</li>
+</ul>
+<h3 id="2fa-management">2FA Management</h3>
+<ul>
+<li><strong>Recovery Options</strong>:
+<ul>
+<li>Users must generate and securely store backup recovery codes during initial 2FA setup.</li>
+<li>Recovery codes must be single-use and regenerated after use.</li>
+<li>A minimum of 10 recovery codes must be provided to each user.</li>
+</ul>
+</li>
+<li><strong>Device Management</strong>:
+<ul>
+<li>Users must register all devices accessing company systems.</li>
+<li>Maximum of 5 trusted devices per user.</li>
+<li>Devices must be re-verified every 180 days.</li>
+</ul>
+</li>
+<li><strong>2FA Resets</strong>:
+<ul>
+<li>Reset requests require identity verification through multiple channels.</li>
+<li>Reset approval requires documented manager authorization.</li>
+<li>All reset actions must be logged for audit purposes.</li>
+</ul>
+</li>
+</ul>
+<h2 id="account-security">Account Security</h2>
+<h3 id="login-protections">Login Protections</h3>
+<ul>
+<li><strong>Failed Attempt Limits</strong>:
+<ul>
+<li>Maximum of 5 failed login attempts before temporary account lockout.</li>
+<li>First lockout period is 30 minutes, with escalating timeframes for repeated lockouts.</li>
+<li>After 3 consecutive lockouts, manual account unlock by IT security personnel is required.</li>
+</ul>
+</li>
+<li><strong>Session Management</strong>:
+<ul>
+<li>Automatic logout after 15 minutes of user inactivity.</li>
+<li>Maximum session duration of 8 hours regardless of activity.</li>
+<li>Concurrent sessions are limited to 2 per user.</li>
+</ul>
+</li>
+<li><strong>Notification System</strong>:
+<ul>
+<li>Users will receive immediate notifications for:
+<ul>
+<li>Successful logins from new devices or locations</li>
+<li>Failed login attempts</li>
+<li>Password or 2FA changes</li>
+<li>Account lockouts</li>
+</ul>
+</li>
+<li>Notifications will be sent via email and in-app alerts when possible.</li>
+</ul>
+</li>
+</ul>
+<h3 id="risk-based-authentication">Risk-Based Authentication</h3>
+<ul>
+<li><strong>Unusual Activity Detection</strong>:
+<ul>
+<li>Login attempts from new geographic locations trigger additional verification.</li>
+<li>Time-of-day anomalies require additional authentication steps.</li>
+<li>Rapid traversal between different geographic IP addresses will trigger security alerts.</li>
+</ul>
+</li>
+<li><strong>Device Fingerprinting</strong>:
+<ul>
+<li>Browser and device characteristics are analyzed for anomalies.</li>
+<li>Changes in device fingerprints require re-authentication.</li>
+</ul>
+</li>
+</ul>
+<h3 id="security-logging">Security Logging</h3>
+<ul>
+<li><strong>Comprehensive Audit Trail</strong>:
+<ul>
+<li>All authentication events must be logged with the following information:
+<ul>
+<li>Timestamp (in UTC)</li>
+<li>Username</li>
+<li>IP address</li>
+<li>Device information</li>
+<li>Authentication method used</li>
+<li>Success/failure status</li>
+<li>Geographic location</li>
+</ul>
+</li>
+<li>Logs must be stored in a tamper-evident format.</li>
+<li>Authentication logs must be retained for a minimum of 12 months.</li>
+<li>High-privilege account logs must be retained for 24 months.</li>
+</ul>
+</li>
+</ul>
+<h2 id="user-education-and-training">User Education and Training</h2>
+<h3 id="initial-training">Initial Training</h3>
+<ul>
+<li><strong>Onboarding Requirements</strong>:
+<ul>
+<li>All new users must complete a mandatory security training module before receiving system access.</li>
+<li>Training must cover password security, 2FA setup, phishing awareness, and social engineering defense.</li>
+<li>Users must pass a knowledge assessment with a minimum score of 80%.</li>
+</ul>
+</li>
+<li><strong>Documentation</strong>:
+<ul>
+<li>Comprehensive user guides for password management and 2FA setup must be provided.</li>
+<li>Step-by-step visual instructions for all supported 2FA methods must be accessible in the company knowledge base.</li>
+</ul>
+</li>
+</ul>
+<h3 id="ongoing-education">Ongoing Education</h3>
+<ul>
+<li><strong>Regular Updates</strong>:
+<ul>
+<li>Quarterly security awareness updates delivered via email and intranet.</li>
+<li>Mandatory annual refresher training for all users.</li>
+<li>Targeted training for users who experience security incidents.</li>
+</ul>
+</li>
+<li><strong>Security Resources</strong>:
+<ul>
+<li>Password management tool recommendations and usage guides.</li>
+<li>Guidelines for creating memorable yet secure passphrases.</li>
+<li>Instructions for reporting suspected security incidents.</li>
+<li>FAQ section addressing common authentication issues.</li>
+</ul>
+</li>
+</ul>
+<h3 id="compliance-monitoring">Compliance Monitoring</h3>
+<ul>
+<li><strong>Training Compliance</strong>:
+<ul>
+<li>Reports of training completion rates by department.</li>
+<li>Reminders for users with approaching or overdue training requirements.</li>
+<li>Escalation to management for employees who fail to complete required training.</li>
+</ul>
+</li>
+<li><strong>Effectiveness Measurement</strong>:
+<ul>
+<li>Regular simulated phishing campaigns to test user awareness.</li>
+<li>Analysis of authentication-related help desk tickets to identify training gaps.</li>
+<li>Annual security knowledge assessment for all users.</li>
+</ul>
+</li>
+</ul>
+<h2 id="exceptions-and-emergency-access">Exceptions and Emergency Access</h2>
+<h3 id="exception-process">Exception Process</h3>
+<ul>
+<li><strong>Request Procedure</strong>:
+<ul>
+<li>Formal written request must be submitted to the Information Security team.</li>
+<li>Request must include business justification, risk assessment, and proposed compensating controls.</li>
+<li>Approval requires sign-off from:
+<ul>
+<li>Department Manager</li>
+<li>Information Security Officer</li>
+<li>IT Director (for exceptions lasting more than 30 days)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Documentation Requirements</strong>:
+<ul>
+<li>All exceptions must be documented in the security exception register.</li>
+<li>Documentation must include scope, duration, justification, and approvals.</li>
+<li>Exceptions must include an expiration date not exceeding 90 days.</li>
+</ul>
+</li>
+</ul>
+<h3 id="emergency-access">Emergency Access</h3>
+<ul>
+<li><strong>Break-Glass Procedure</strong>:
+<ul>
+<li>Designated emergency access accounts for critical systems.</li>
+<li>Multi-person authorization required for emergency access activation.</li>
+<li>Tamper-evident seals on physical emergency access credentials.</li>
+</ul>
+</li>
+<li><strong>Monitoring and Recovery</strong>:
+<ul>
+<li>Real-time alerts when emergency access is initiated.</li>
+<li>Continuous monitoring during emergency access sessions.</li>
+<li>Mandatory post-incident review within 24 hours.</li>
+<li>Password and credential rotation after emergency access use.</li>
+</ul>
+</li>
+</ul>
+<h3 id="regulatory-compliance">Regulatory Compliance</h3>
+<ul>
+<li><strong>Compliance Alignment</strong>:
+<ul>
+<li>All exceptions must be evaluated for impact on regulatory compliance.</li>
+<li>Exceptions affecting regulated data require additional approval from Compliance Officer.</li>
+<li>Documentation of exceptions must satisfy audit requirements for applicable regulations.</li>
+</ul>
+</li>
+<li><strong>Periodic Review</strong>:
+<ul>
+<li>All exceptions must be reviewed quarterly.</li>
+<li>Exceptions must be revoked when no longer necessary.</li>
+<li>Annual report of exceptions must be provided to executive management.</li>
+</ul>
+</li>
+</ul>
+<h2 id="implementation-and-enforcement">Implementation and Enforcement</h2>
+<h3 id="technical-controls">Technical Controls</h3>
+<ul>
+<li><strong>Password Management Systems</strong>:
+<ul>
+<li>Enterprise password management solution for secure credential storage.</li>
+<li>Password policy enforcement through Active Directory or equivalent identity provider.</li>
+<li>Self-service password reset capability with appropriate identity verification.</li>
+</ul>
+</li>
+<li><strong>2FA Infrastructure</strong>:
+<ul>
+<li>Centralized 2FA management console for administrators.</li>
+<li>Integration with single sign-on (SSO) solution where applicable.</li>
+<li>Backup 2FA servers to ensure high availability.</li>
+</ul>
+</li>
+</ul>
+<h3 id="compliance-monitoring-1">Compliance Monitoring</h3>
+<ul>
+<li><strong>Regular Audits</strong>:
+<ul>
+<li>Monthly automated scans for accounts not using 2FA.</li>
+<li>Quarterly review of password policy compliance.</li>
+<li>Annual penetration testing of authentication systems.</li>
+</ul>
+</li>
+<li><strong>Reporting</strong>:
+<ul>
+<li>Weekly reports on authentication failures and lockouts.</li>
+<li>Monthly reports on 2FA adoption and usage.</li>
+<li>Quarterly compliance reports to management.</li>
+</ul>
+</li>
+</ul>
+<h3 id="enforcement-measures">Enforcement Measures</h3>
+<ul>
+<li><strong>Non-Compliance Consequences</strong>:
+<ul>
+<li>Accounts not meeting policy requirements subject to temporary restriction.</li>
+<li>Repeated non-compliance reported to user&rsquo;s manager.</li>
+<li>Willful circumvention of security controls subject to disciplinary action.</li>
+</ul>
+</li>
+<li><strong>Technical Enforcement</strong>:
+<ul>
+<li>Account provisioning dependent on policy compliance.</li>
+<li>Automated enforcement of password complexity and history.</li>
+<li>System-level prevention of authentication without 2FA.</li>
+</ul>
+</li>
+</ul>
+<h2 id="policy-management">Policy Management</h2>
+<h3 id="version-control">Version Control</h3>
+<ul>
+<li>Current version: 1.0</li>
+<li>Effective date: [Date]</li>
+<li>Review frequency: Annual or upon significant technology/threat changes</li>
+</ul>
+<h3 id="responsibilities">Responsibilities</h3>
+<ul>
+<li><strong>Policy Owner</strong>: Chief Information Security Officer</li>
+<li><strong>Implementation</strong>: IT Security Team</li>
+<li><strong>Compliance Monitoring</strong>: Security Operations Center</li>
+<li><strong>User Support</strong>: IT Help Desk</li>
+</ul>
+<h3 id="references">References</h3>
+<ul>
+<li>NIST Special Publication 800-63B: Digital Identity Guidelines</li>
+<li>ISO/IEC 27001:2013 Annex A.9: Access Control</li>
+<li>OWASP Authentication Best Practices</li>
+</ul>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Automation on Everyday Identity</title>
+    <link>https://everydayidentity.local/tags/automation/</link>
+    <description>Recent content in Automation on Everyday Identity</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://everydayidentity.local/tags/automation/index.xml" rel="self" type="application/rss" />
+    <item>
+      <title>IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</title>
+      <link>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</guid>
+      <description>Lifecycle management is the foundation of secure and efficient IAM. This post explores how to get Joiners, Movers, and Leavers (JML) right with automation, policy, and governance.</description>
+      <content:encoded><![CDATA[<p><img alt="Lifecycle Management Illustration" loading="lazy" src="/images/post_lifecycle.png"></p>
+<h1 id="iam-101-lifecycle-management--joiners-movers-and-leavers-done-right">IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</h1>
+<h2 id="tldr">TL;DR</h2>
+<p>Identity Lifecycle Management (ILM) governs the entire digital identity journey—from onboarding new employees to adjusting access when they change roles, to securely deactivating accounts when they leave. This &ldquo;Joiners, Movers, and Leavers&rdquo; process is critical to both security and operational efficiency. When mismanaged, it leads to overprovisioned users, dormant accounts, compliance failures, and insider threats. This article breaks down the core lifecycle stages, shows how automation can fix the chaos, and offers practical strategies drawn from real enterprise deployments.</p>
+<hr>
+<h2 id="-background">🔍 Background</h2>
+<p>After 15 years in IAM, I&rsquo;ve learned this: the <strong>lifecycle is where most identity programs succeed—or completely fall apart</strong>.</p>
+<p>You can have MFA, PAM, and Zero Trust. But if former employees still have access, or if contractors sit dormant in your HR system, your “secure perimeter” is full of holes.</p>
+<p>The lifecycle process—commonly called <strong>JML (Joiners, Movers, Leavers)</strong>—is one of the most overlooked pillars in Identity and Access Management. It should be simple. In practice? It’s often a tangled web of manual tickets, disconnected systems, and tribal knowledge.</p>
+<p>This post will help you fix that.</p>
+<hr>
+<h2 id="-the-three-stages-of-lifecycle-management">👥 The Three Stages of Lifecycle Management</h2>
+<h3 id="-1-joiners--onboarding-users-securely">🔹 1. <strong>Joiners – Onboarding Users Securely</strong></h3>
+<p>Joiners are new hires, contractors, interns, or vendors who need accounts and access. This is your first chance to make a secure <em>and</em> smooth first impression.</p>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>Trigger provisioning from your source of truth (HRIS like Workday, SAP, or BambooHR)</li>
+<li>Automatically assign access based on role, department, location</li>
+<li>Require MFA enrollment at first login</li>
+<li>Limit access to least privilege from day one</li>
+</ul>
+<blockquote>
+<p>✅ Example: A new marketing associate is hired. Their role triggers automatic creation of email, Slack, Adobe, and SharePoint access. MFA and training are enforced before access is granted.</p></blockquote>
+<hr>
+<h3 id="-2-movers--managing-internal-changes">🔹 2. <strong>Movers – Managing Internal Changes</strong></h3>
+<p>Movers are people who shift roles, departments, locations, or teams. Without a process, movers accumulate access—leading to &ldquo;permission bloat&rdquo; and audit nightmares.</p>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>Use real-time attribute updates (title, department, manager) from HR</li>
+<li>Automatically adjust group memberships, entitlements, and app access</li>
+<li>Remove no-longer-needed access as part of each move</li>
+<li>Trigger a re-certification or approval flow for sensitive access</li>
+</ul>
+<blockquote>
+<p>✅ Example: A finance analyst moves to sales ops. Finance access is revoked, CRM access is granted, and access to reporting tools is adjusted automatically.</p></blockquote>
+<hr>
+<h3 id="-3-leavers--offboarding-without-loose-ends">🔹 3. <strong>Leavers – Offboarding Without Loose Ends</strong></h3>
+<p>Leavers include employees who resign, are terminated, or complete contracts. This is where poor lifecycle processes turn into real security risks.</p>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>Termination in HR triggers immediate deprovisioning</li>
+<li>Disable SSO and privileged accounts within minutes</li>
+<li>Archive email and files where applicable</li>
+<li>Reclaim licenses, devices, and security tokens</li>
+<li>Notify managers and stakeholders</li>
+</ul>
+<blockquote>
+<p>✅ Example: A contractor finishes their engagement. Their end date in HR disables all accounts within 15 minutes, notifies IT, and removes their access from Zoom, Jira, and AWS.</p></blockquote>
+<hr>
+<h2 id="-why-lifecycle-management-matters">🧠 Why Lifecycle Management Matters</h2>
+<p>Done right, identity lifecycle management results in:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Benefit</th>
+          <th>Impact</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Security</strong></td>
+          <td>No dormant or excessive accounts to exploit</td>
+      </tr>
+      <tr>
+          <td><strong>Compliance</strong></td>
+          <td>Easy audit trails for access and deprovisioning</td>
+      </tr>
+      <tr>
+          <td><strong>Efficiency</strong></td>
+          <td>Reduce manual tickets and IT workload</td>
+      </tr>
+      <tr>
+          <td><strong>User Experience</strong></td>
+          <td>Seamless onboarding and clean offboarding</td>
+      </tr>
+      <tr>
+          <td><strong>License Optimization</strong></td>
+          <td>Avoid paying for unused SaaS accounts</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="and-when-it-goes-wrong">And when it goes wrong?</h3>
+<p>A 2023 study by IBM found that <strong>60% of insider threats originated from improperly deprovisioned or over-privileged users</strong>, many of whom had changed roles or left entirely.</p>
+<hr>
+<h2 id="-automating-the-lifecycle">⚙️ Automating the Lifecycle</h2>
+<h3 id="-step-1-integrate-with-your-hr-system">🔄 Step 1: Integrate with Your HR System</h3>
+<p>Your HRIS (Workday, SuccessFactors, UKG, etc.) should be your <strong>source of truth</strong>. Every create/change/terminate action should begin there.</p>
+<h3 id="-step-2-use-your-iam-platform-to-drive-logic">🤖 Step 2: Use Your IAM Platform to Drive Logic</h3>
+<p>Platforms like Okta, Microsoft Entra ID, SailPoint, and Saviynt can:</p>
+<ul>
+<li>Map attributes to access policies</li>
+<li>Enforce Just-in-Time provisioning</li>
+<li>Connect to SaaS apps via SCIM, API, or connectors</li>
+<li>Manage lifecycle events as workflow logic</li>
+</ul>
+<h3 id="-step-3-monitor-review-certify">🔍 Step 3: Monitor, Review, Certify</h3>
+<p>Access should never be “set it and forget it.” Build into your lifecycle:</p>
+<ul>
+<li>Scheduled access reviews</li>
+<li>Real-time deprovisioning on exit</li>
+<li>Manager recertification flows on move events</li>
+</ul>
+<hr>
+<h2 id="-building-a-scalable-lifecycle-framework">🧱 Building a Scalable Lifecycle Framework</h2>
+<p>Here’s a framework I’ve used in enterprise IAM programs:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Lifecycle Phase</th>
+          <th>Action</th>
+          <th>IAM Tactic</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Pre-boarding</strong></td>
+          <td>Email sent, account created in IDP</td>
+          <td>Attribute-based provisioning</td>
+      </tr>
+      <tr>
+          <td><strong>Day 0</strong></td>
+          <td>SSO access granted, MFA required</td>
+          <td>Group- or role-based access</td>
+      </tr>
+      <tr>
+          <td><strong>Day 30</strong></td>
+          <td>Probationary review, remove temp access</td>
+          <td>Scheduled audit workflows</td>
+      </tr>
+      <tr>
+          <td><strong>Mover</strong></td>
+          <td>Role/title/manager change</td>
+          <td>Dynamic group reassignment</td>
+      </tr>
+      <tr>
+          <td><strong>Leaver (Planned)</strong></td>
+          <td>Term date known, start cleanup early</td>
+          <td>Time-based workflows</td>
+      </tr>
+      <tr>
+          <td><strong>Leaver (Unplanned)</strong></td>
+          <td>Immediate disable, alert IT/security</td>
+          <td>Termination trigger from HR or SIEM</td>
+      </tr>
+      <tr>
+          <td><strong>Post-departure</strong></td>
+          <td>Archive mailbox, reclaim license</td>
+          <td>Automated cleanup</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-real-world-lessons-from-the-field">🏛️ Real-World Lessons from the Field</h2>
+<p>I once consulted for a healthcare org where <strong>access removal took 3–5 days</strong> due to manual ServiceNow tickets. During that lag, former employees still had access to PHI. We implemented HR-triggered provisioning with SailPoint + Okta, reducing offboarding time to under 15 minutes—and passed their next HIPAA audit cleanly.</p>
+<p>Another client used a shared spreadsheet for managing contractor access. You can guess what happened: hundreds of active accounts for people who hadn’t worked there in years.</p>
+<p>Lifecycle failures aren’t hypothetical. They’re happening daily—and they’re avoidable.</p>
+<hr>
+<h2 id="-cited-study">📚 Cited Study</h2>
+<blockquote>
+<p>According to a 2023 <strong>Ponemon Institute</strong> report, organizations that automated identity lifecycle processes reduced insider threat-related incidents by <strong>45%</strong> and saw a 28% drop in audit violations tied to excessive access.</p></blockquote>
+<hr>
+<h2 id="-final-thoughts">🧭 Final Thoughts</h2>
+<p>Lifecycle management isn’t flashy, but it’s foundational. It’s where automation, governance, and Zero Trust meet. When done well, JML enables:</p>
+<ul>
+<li>Tighter security</li>
+<li>Better compliance</li>
+<li>Happier employees and IT teams</li>
+</ul>
+<p>The trick is to start small—integrate HR, automate basic onboarding/offboarding, and grow into adaptive access and recertification.</p>
+<blockquote>
+<p>IAM isn’t just about protecting access—it’s about controlling it from <strong>beginning to end.</strong></p></blockquote>
+<hr>
+<h2 id="-up-next-in-the-series">🚀 Up Next in the Series:</h2>
+<p>👉 <strong>IAM 101: Single Sign-On (SSO) – The Magic of One Login</strong></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</title>
+      <link>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</guid>
+      <description>Lifecycle management is the foundation of secure and efficient IAM. This post explores how to get Joiners, Movers, and Leavers (JML) right with automation, policy, and governance.</description>
+      <content:encoded><![CDATA[<p><img alt="Lifecycle Management Illustration" loading="lazy" src="/images/post_lifecycle.png"></p>
+<h1 id="iam-101-lifecycle-management--joiners-movers-and-leavers-done-right">IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</h1>
+<h2 id="tldr">TL;DR</h2>
+<p>Identity Lifecycle Management (ILM) governs the entire digital identity journey—from onboarding new employees to adjusting access when they change roles, to securely deactivating accounts when they leave. This &ldquo;Joiners, Movers, and Leavers&rdquo; process is critical to both security and operational efficiency. When mismanaged, it leads to overprovisioned users, dormant accounts, compliance failures, and insider threats. This article breaks down the core lifecycle stages, shows how automation can fix the chaos, and offers practical strategies drawn from real enterprise deployments.</p>
+<hr>
+<h2 id="-background">🔍 Background</h2>
+<p>After 15 years in IAM, I&rsquo;ve learned this: the <strong>lifecycle is where most identity programs succeed—or completely fall apart</strong>.</p>
+<p>You can have MFA, PAM, and Zero Trust. But if former employees still have access, or if contractors sit dormant in your HR system, your “secure perimeter” is full of holes.</p>
+<p>The lifecycle process—commonly called <strong>JML (Joiners, Movers, Leavers)</strong>—is one of the most overlooked pillars in Identity and Access Management. It should be simple. In practice? It’s often a tangled web of manual tickets, disconnected systems, and tribal knowledge.</p>
+<p>This post will help you fix that.</p>
+<hr>
+<h2 id="-the-three-stages-of-lifecycle-management">👥 The Three Stages of Lifecycle Management</h2>
+<h3 id="-1-joiners--onboarding-users-securely">🔹 1. <strong>Joiners – Onboarding Users Securely</strong></h3>
+<p>Joiners are new hires, contractors, interns, or vendors who need accounts and access. This is your first chance to make a secure <em>and</em> smooth first impression.</p>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>Trigger provisioning from your source of truth (HRIS like Workday, SAP, or BambooHR)</li>
+<li>Automatically assign access based on role, department, location</li>
+<li>Require MFA enrollment at first login</li>
+<li>Limit access to least privilege from day one</li>
+</ul>
+<blockquote>
+<p>✅ Example: A new marketing associate is hired. Their role triggers automatic creation of email, Slack, Adobe, and SharePoint access. MFA and training are enforced before access is granted.</p></blockquote>
+<hr>
+<h3 id="-2-movers--managing-internal-changes">🔹 2. <strong>Movers – Managing Internal Changes</strong></h3>
+<p>Movers are people who shift roles, departments, locations, or teams. Without a process, movers accumulate access—leading to &ldquo;permission bloat&rdquo; and audit nightmares.</p>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>Use real-time attribute updates (title, department, manager) from HR</li>
+<li>Automatically adjust group memberships, entitlements, and app access</li>
+<li>Remove no-longer-needed access as part of each move</li>
+<li>Trigger a re-certification or approval flow for sensitive access</li>
+</ul>
+<blockquote>
+<p>✅ Example: A finance analyst moves to sales ops. Finance access is revoked, CRM access is granted, and access to reporting tools is adjusted automatically.</p></blockquote>
+<hr>
+<h3 id="-3-leavers--offboarding-without-loose-ends">🔹 3. <strong>Leavers – Offboarding Without Loose Ends</strong></h3>
+<p>Leavers include employees who resign, are terminated, or complete contracts. This is where poor lifecycle processes turn into real security risks.</p>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>Termination in HR triggers immediate deprovisioning</li>
+<li>Disable SSO and privileged accounts within minutes</li>
+<li>Archive email and files where applicable</li>
+<li>Reclaim licenses, devices, and security tokens</li>
+<li>Notify managers and stakeholders</li>
+</ul>
+<blockquote>
+<p>✅ Example: A contractor finishes their engagement. Their end date in HR disables all accounts within 15 minutes, notifies IT, and removes their access from Zoom, Jira, and AWS.</p></blockquote>
+<hr>
+<h2 id="-why-lifecycle-management-matters">🧠 Why Lifecycle Management Matters</h2>
+<p>Done right, identity lifecycle management results in:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Benefit</th>
+          <th>Impact</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Security</strong></td>
+          <td>No dormant or excessive accounts to exploit</td>
+      </tr>
+      <tr>
+          <td><strong>Compliance</strong></td>
+          <td>Easy audit trails for access and deprovisioning</td>
+      </tr>
+      <tr>
+          <td><strong>Efficiency</strong></td>
+          <td>Reduce manual tickets and IT workload</td>
+      </tr>
+      <tr>
+          <td><strong>User Experience</strong></td>
+          <td>Seamless onboarding and clean offboarding</td>
+      </tr>
+      <tr>
+          <td><strong>License Optimization</strong></td>
+          <td>Avoid paying for unused SaaS accounts</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="and-when-it-goes-wrong">And when it goes wrong?</h3>
+<p>A 2023 study by IBM found that <strong>60% of insider threats originated from improperly deprovisioned or over-privileged users</strong>, many of whom had changed roles or left entirely.</p>
+<hr>
+<h2 id="-automating-the-lifecycle">⚙️ Automating the Lifecycle</h2>
+<h3 id="-step-1-integrate-with-your-hr-system">🔄 Step 1: Integrate with Your HR System</h3>
+<p>Your HRIS (Workday, SuccessFactors, UKG, etc.) should be your <strong>source of truth</strong>. Every create/change/terminate action should begin there.</p>
+<h3 id="-step-2-use-your-iam-platform-to-drive-logic">🤖 Step 2: Use Your IAM Platform to Drive Logic</h3>
+<p>Platforms like Okta, Microsoft Entra ID, SailPoint, and Saviynt can:</p>
+<ul>
+<li>Map attributes to access policies</li>
+<li>Enforce Just-in-Time provisioning</li>
+<li>Connect to SaaS apps via SCIM, API, or connectors</li>
+<li>Manage lifecycle events as workflow logic</li>
+</ul>
+<h3 id="-step-3-monitor-review-certify">🔍 Step 3: Monitor, Review, Certify</h3>
+<p>Access should never be “set it and forget it.” Build into your lifecycle:</p>
+<ul>
+<li>Scheduled access reviews</li>
+<li>Real-time deprovisioning on exit</li>
+<li>Manager recertification flows on move events</li>
+</ul>
+<hr>
+<h2 id="-building-a-scalable-lifecycle-framework">🧱 Building a Scalable Lifecycle Framework</h2>
+<p>Here’s a framework I’ve used in enterprise IAM programs:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Lifecycle Phase</th>
+          <th>Action</th>
+          <th>IAM Tactic</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Pre-boarding</strong></td>
+          <td>Email sent, account created in IDP</td>
+          <td>Attribute-based provisioning</td>
+      </tr>
+      <tr>
+          <td><strong>Day 0</strong></td>
+          <td>SSO access granted, MFA required</td>
+          <td>Group- or role-based access</td>
+      </tr>
+      <tr>
+          <td><strong>Day 30</strong></td>
+          <td>Probationary review, remove temp access</td>
+          <td>Scheduled audit workflows</td>
+      </tr>
+      <tr>
+          <td><strong>Mover</strong></td>
+          <td>Role/title/manager change</td>
+          <td>Dynamic group reassignment</td>
+      </tr>
+      <tr>
+          <td><strong>Leaver (Planned)</strong></td>
+          <td>Term date known, start cleanup early</td>
+          <td>Time-based workflows</td>
+      </tr>
+      <tr>
+          <td><strong>Leaver (Unplanned)</strong></td>
+          <td>Immediate disable, alert IT/security</td>
+          <td>Termination trigger from HR or SIEM</td>
+      </tr>
+      <tr>
+          <td><strong>Post-departure</strong></td>
+          <td>Archive mailbox, reclaim license</td>
+          <td>Automated cleanup</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-real-world-lessons-from-the-field">🏛️ Real-World Lessons from the Field</h2>
+<p>During my time at a previous role, we kicked off our IAM journey the hard way—<strong>with Excel spreadsheets</strong>. Every new hire, role change, or termination required someone in IT or HR to manually update a shared document. It wasn’t just tedious—it was <strong>dangerous</strong>.</p>
+<p>Onboarding could take <strong>hours or even days</strong>, depending on when someone reviewed the sheet and how fast the manual tickets were processed. Sometimes users would start on day one without email or key app access. Others left the company, but their access lingered—sometimes for weeks—because no one flagged them for removal.</p>
+<p>We had no centralized system, no automation, and no visibility. It was a perfect storm for audit failures, excessive access, and frustrated managers.</p>
+<p>That experience was a turning point. We implemented a modern IAM platform integrated with Workday and Okta. Once we moved from Excel to policy-based automation:</p>
+<ul>
+<li>Joiners had accounts ready before day one</li>
+<li>Movers triggered dynamic access changes in near real-time</li>
+<li>Leavers were disabled within minutes of HR action</li>
+</ul>
+<p>Not only did we eliminate security gaps—we gave back hours of productivity to our teams and passed our first true access audit with zero major findings.</p>
+<blockquote>
+<p>Lesson learned: manual JML processes don’t scale. If you’re still relying on spreadsheets or ticketing alone, <strong>start automating now.</strong></p></blockquote>
+<hr>
+<h2 id="-cited-study">📚 Cited Study</h2>
+<blockquote>
+<p>According to a 2023 <strong>Ponemon Institute</strong> report, organizations that automated identity lifecycle processes reduced insider threat-related incidents by <strong>45%</strong> and saw a 28% drop in audit violations tied to excessive access.</p></blockquote>
+<hr>
+<h2 id="-final-thoughts">🧭 Final Thoughts</h2>
+<p>Lifecycle management isn’t flashy, but it’s foundational. It’s where automation, governance, and Zero Trust meet. When done well, JML enables:</p>
+<ul>
+<li>Tighter security</li>
+<li>Better compliance</li>
+<li>Happier employees and IT teams</li>
+</ul>
+<p>The trick is to start small—integrate HR, automate basic onboarding/offboarding, and grow into adaptive access and recertification.</p>
+<blockquote>
+<p>IAM isn’t just about protecting access—it’s about controlling it from <strong>beginning to end.</strong></p></blockquote>
+<hr>
+<h2 id="-up-next-in-the-series">🚀 Up Next in the Series:</h2>
+<p>👉 <strong>IAM 101: Single Sign-On (SSO) – The Magic of One Login</strong></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

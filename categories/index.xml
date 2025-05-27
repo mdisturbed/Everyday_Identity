@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Everyday Identity</title>
+    <link>https://everydayidentity.local/categories/</link>
+    <description>Recent content in Categories on Everyday Identity</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://everydayidentity.local/categories/index.xml" rel="self" type="application/rss" />
+    <item>
+      <title>Identity &amp; Access Management</title>
+      <link>https://everydayidentity.local/categories/identity--access-management/</link>
+      <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://everydayidentity.local/categories/identity--access-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Identity Security</title>
+      <link>https://everydayidentity.local/categories/identity-security/</link>
+      <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://everydayidentity.local/categories/identity-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security Checklists</title>
+      <link>https://everydayidentity.local/categories/security-checklists/</link>
+      <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://everydayidentity.local/categories/security-checklists/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zero Trust</title>
+      <link>https://everydayidentity.local/categories/zero-trust/</link>
+      <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://everydayidentity.local/categories/zero-trust/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Governance</title>
+      <link>https://everydayidentity.local/categories/ai-governance/</link>
+      <pubDate>Wed, 23 Apr 2025 09:00:00 -0400</pubDate>
+      <guid>https://everydayidentity.local/categories/ai-governance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Privacy</title>
+      <link>https://everydayidentity.local/categories/data-privacy/</link>
+      <pubDate>Sun, 30 Mar 2025 20:47:10 -0400</pubDate>
+      <guid>https://everydayidentity.local/categories/data-privacy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security Policy</title>
+      <link>https://everydayidentity.local/categories/security-policy/</link>
+      <pubDate>Sun, 30 Mar 2025 20:47:10 -0400</pubDate>
+      <guid>https://everydayidentity.local/categories/security-policy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Password Security</title>
+      <link>https://everydayidentity.local/categories/password-security/</link>
+      <pubDate>Tue, 18 Mar 2025 15:05:44 -0400</pubDate>
+      <guid>https://everydayidentity.local/categories/password-security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Privileged Access Management</title>
+      <link>https://everydayidentity.local/categories/privileged-access-management/</link>
+      <pubDate>Fri, 14 Mar 2025 15:00:08 -0400</pubDate>
+      <guid>https://everydayidentity.local/categories/privileged-access-management/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

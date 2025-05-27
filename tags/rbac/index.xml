@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>RBAC on Everyday Identity</title>
+    <link>https://everydayidentity.local/tags/rbac/</link>
+    <description>Recent content in RBAC on Everyday Identity</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://everydayidentity.local/tags/rbac/index.xml" rel="self" type="application/rss" />
+    <item>
+      <title>IAM 101: RBAC, ABAC, and PBAC – Choosing the Right Access Model</title>
+      <link>https://everydayidentity.local/2025/05/iam-101-rbac-abac-and-pbac-choosing-the-right-access-model/</link>
+      <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://everydayidentity.local/2025/05/iam-101-rbac-abac-and-pbac-choosing-the-right-access-model/</guid>
+      <description>Understand the strengths, weaknesses, and real-world use cases of RBAC, ABAC, and PBAC—and how to choose the right access model for your organization.</description>
+      <content:encoded><![CDATA[<p><img alt="Access Control Model Illustration" loading="lazy" src="/images/post_access_models.png"></p>
+<h1 id="iam-101-rbac-abac-and-pbac--choosing-the-right-access-model">IAM 101: RBAC, ABAC, and PBAC – Choosing the Right Access Model</h1>
+<h2 id="tldr">TL;DR</h2>
+<p>Access control models define <strong>who can access what</strong> within your systems—and more importantly, <strong>under what conditions</strong>. The most common models—<strong>RBAC (Role-Based Access Control)</strong>, <strong>ABAC (Attribute-Based Access Control)</strong>, and <strong>PBAC (Policy-Based Access Control)</strong>—offer different strengths depending on your organization’s complexity, compliance needs, and operational maturity. In this post, we’ll explore each model, compare real-world use cases, and help you decide which approach fits your identity strategy.</p>
+<hr>
+<h2 id="-background">🔍 Background</h2>
+<p>In the IAM world, <strong>authorization</strong> is the engine that drives secure access—yet it&rsquo;s also where things get messy. I&rsquo;ve seen it firsthand during audits, mergers, app onboarding, and cloud migrations.</p>
+<p>The first time I inherited a role matrix built on RBAC with 300+ overlapping roles? It was chaos. That was 2012. Since then, I’ve implemented cleaner, more scalable access control systems using ABAC and, in advanced cases, PBAC.</p>
+<p>Choosing the right model isn&rsquo;t just a technical decision—it’s a governance one. It determines how granular, flexible, and enforceable your access policies will be across on-prem, cloud, SaaS, and hybrid environments.</p>
+<hr>
+<h2 id="-access-control-models-explained">🧱 Access Control Models Explained</h2>
+<h3 id="-what-is-rbac">🔐 What is RBAC?</h3>
+<p><strong>Role-Based Access Control</strong> assigns access based on job roles. Each role maps to a set of permissions, and users are assigned roles.</p>
+<h4 id="example">Example:</h4>
+<ul>
+<li>A user in the &ldquo;HR Manager&rdquo; role automatically gets access to Workday, Payroll, and Benefits Admin.</li>
+</ul>
+<h4 id="-pros">✅ Pros:</h4>
+<ul>
+<li>Easy to understand and manage</li>
+<li>Works well in stable orgs with clear job structures</li>
+<li>Widely supported in enterprise systems</li>
+</ul>
+<h4 id="-cons">❌ Cons:</h4>
+<ul>
+<li>Explodes in complexity as exceptions grow</li>
+<li>Doesn&rsquo;t scale well across dynamic environments</li>
+<li>Often leads to “role creep” (users get too many roles)</li>
+</ul>
+<hr>
+<h3 id="-what-is-abac">🧠 What is ABAC?</h3>
+<p><strong>Attribute-Based Access Control</strong> goes beyond roles by evaluating <strong>attributes</strong>—user department, location, device trust level, time of day, etc.</p>
+<h4 id="example-1">Example:</h4>
+<ul>
+<li>“Allow access to the finance dashboard if user.department = &lsquo;Finance&rsquo; AND device.compliant = true AND location = &lsquo;US&rsquo;.”</li>
+</ul>
+<h4 id="-pros-1">✅ Pros:</h4>
+<ul>
+<li>Highly granular and dynamic</li>
+<li>Ideal for modern, hybrid environments</li>
+<li>Supports context-aware security</li>
+</ul>
+<h4 id="-cons-1">❌ Cons:</h4>
+<ul>
+<li>Can be hard to audit or visualize</li>
+<li>Policy logic can become complex</li>
+<li>Needs clean, consistent attribute data</li>
+</ul>
+<hr>
+<h3 id="-what-is-pbac">📜 What is PBAC?</h3>
+<p><strong>Policy-Based Access Control</strong> (often seen as an evolution of ABAC) centers around central, codified policies written in natural or declarative language.</p>
+<h4 id="example-2">Example:</h4>
+<ul>
+<li>“Managers can approve expense reports for direct reports under $5,000.”</li>
+<li>“Deny access to sensitive data unless classification = &lsquo;Internal&rsquo; and user has completed training.”</li>
+</ul>
+<h4 id="-pros-2">✅ Pros:</h4>
+<ul>
+<li>Expressive, business-aligned policies</li>
+<li>Useful in governance-heavy industries (finance, healthcare)</li>
+<li>Enables Just-in-Time and risk-based access models</li>
+</ul>
+<h4 id="-cons-2">❌ Cons:</h4>
+<ul>
+<li>Requires robust policy engine (like Axiomatics, PlainID)</li>
+<li>Strong coordination between IAM and business units</li>
+<li>Learning curve for authoring policies</li>
+</ul>
+<hr>
+<h2 id="-rbac-vs-abac-vs-pbac-side-by-side-comparison">⚖️ RBAC vs ABAC vs PBAC: Side-by-Side Comparison</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>RBAC</th>
+          <th>ABAC</th>
+          <th>PBAC</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Primary Driver</strong></td>
+          <td>Role</td>
+          <td>Attributes (user, resource, env)</td>
+          <td>High-level business policy</td>
+      </tr>
+      <tr>
+          <td><strong>Granularity</strong></td>
+          <td>Medium</td>
+          <td>High</td>
+          <td>Very High</td>
+      </tr>
+      <tr>
+          <td><strong>Scalability</strong></td>
+          <td>Low-Medium</td>
+          <td>High</td>
+          <td>High</td>
+      </tr>
+      <tr>
+          <td><strong>Ease of Setup</strong></td>
+          <td>Easy</td>
+          <td>Moderate</td>
+          <td>Hard</td>
+      </tr>
+      <tr>
+          <td><strong>Auditability</strong></td>
+          <td>Easy</td>
+          <td>Moderate</td>
+          <td>Depends on implementation</td>
+      </tr>
+      <tr>
+          <td><strong>Best Fit For</strong></td>
+          <td>Small/medium orgs with static roles</td>
+          <td>Enterprises with dynamic access needs</td>
+          <td>Regulated industries needing fine-grained access logic</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="-real-world-use-cases">🏢 Real-World Use Cases</h2>
+<h3 id="-healthcare-organization--rbac-first-then-abac">🧾 Healthcare Organization – RBAC First, Then ABAC</h3>
+<p>A healthcare system I worked with started with classic RBAC (Doctors, Nurses, Admins) but added ABAC when telehealth rolled out. Now, patient records are only viewable if:</p>
+<ul>
+<li>The user is assigned to the patient’s care team</li>
+<li>Access is from a compliant device</li>
+<li>The shift is currently active</li>
+</ul>
+<h3 id="-government-agency--pbac-for-zero-trust">🏛️ Government Agency – PBAC for Zero Trust</h3>
+<p>A federal agency uses PBAC to implement Zero Trust. Access is defined by central policies like:</p>
+<blockquote>
+<p>“Only users who have completed clearance check and are within U.S. jurisdiction may access classified documents.”</p></blockquote>
+<p>Policies are enforced through integration with SIEM and UEBA tools that feed into dynamic risk scoring.</p>
+<hr>
+<h2 id="-cited-study">📊 Cited Study</h2>
+<blockquote>
+<p>According to Gartner’s “Market Guide for Attribute-Based Access Control” (2022), <strong>by 2026, 60% of enterprises will phase out pure role-based models</strong> in favor of attribute and policy-based methods to handle complex, dynamic workforces and multi-cloud access needs.</p></blockquote>
+<hr>
+<h2 id="-implementation-tips-for-it-teams">🔧 Implementation Tips for IT Teams</h2>
+<p>If you&rsquo;re evaluating your access control strategy, here&rsquo;s how I recommend approaching it:</p>
+<h3 id="1-start-simple">1. <strong>Start Simple</strong></h3>
+<p>Use RBAC to handle common, static job functions. Get your roles cleaned up and mapped properly.</p>
+<h3 id="2-layer-in-abac-where-needed">2. <strong>Layer in ABAC Where Needed</strong></h3>
+<p>Don’t rip and replace. Add ABAC where roles fall short—like context-aware access, contractor logic, or hybrid user states.</p>
+<h3 id="3-build-toward-policy-governance">3. <strong>Build Toward Policy Governance</strong></h3>
+<p>If you&rsquo;re in a regulated industry or preparing for Zero Trust, start introducing PBAC policies aligned to business outcomes (e.g., data classification, training completion, risk score).</p>
+<h3 id="4-leverage-your-idp-or-iga-platform">4. <strong>Leverage Your IdP or IGA Platform</strong></h3>
+<p>Modern IAM platforms like Okta, Azure AD, SailPoint, or Saviynt often support hybrid RBAC/ABAC logic. Use these tools to enforce least privilege dynamically.</p>
+<h3 id="5-dont-skip-auditing-and-review">5. <strong>Don’t Skip Auditing and Review</strong></h3>
+<p>No matter the model, ensure access is reviewed quarterly and attested by business owners.</p>
+<hr>
+<h2 id="-final-thoughts">🧭 Final Thoughts</h2>
+<p>There’s no one-size-fits-all access model. But here&rsquo;s how I like to think of it:</p>
+<ul>
+<li><strong>RBAC</strong> is great for static environments with clear roles.</li>
+<li><strong>ABAC</strong> is essential for dynamic, hybrid, and cloud-based work.</li>
+<li><strong>PBAC</strong> is your go-to when business rules drive access—or when regulators require explainability.</li>
+</ul>
+<p>The best programs use a <strong>hybrid approach</strong>—starting with RBAC for structure, layering ABAC for flexibility, and adopting PBAC for risk-based governance.</p>
+<blockquote>
+<p>As identity professionals, our goal isn&rsquo;t just granting access—it&rsquo;s <strong>granting the <em>right</em> access, at the <em>right</em> time, for the <em>right</em> reason.</strong></p></blockquote>
+<hr>
+<h2 id="-up-next-in-the-series">🚀 Up Next in the Series:</h2>
+<p>👉 <strong>IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</strong></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Common IAM Misconfigurations and How to Avoid Them</title>
+      <link>https://everydayidentity.local/2025/04/common-iam-misconfigurations-and-how-to-avoid-them/</link>
+      <pubDate>Wed, 30 Apr 2025 09:00:00 -0400</pubDate>
+      <guid>https://everydayidentity.local/2025/04/common-iam-misconfigurations-and-how-to-avoid-them/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_seven.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Identity and Access Management (IAM) is the foundation of organizational security. Yet, even the most well-intentioned IAM deployments are riddled with misconfigurations that open dangerous backdoors for attackers. In today’s cloud-first and hybrid work environments, a single oversight in IAM can lead to data breaches, compliance violations, and business disruptions.&lt;/p&gt;
+&lt;p&gt;In this article, we’ll walk through the most common IAM misconfigurations—and how to avoid them using practical strategies, with real-world examples to highlight the risks.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><img alt="Image" loading="lazy" src="/post_seven.png"></p>
+<h2 id="introduction"><strong>Introduction</strong></h2>
+<p>Identity and Access Management (IAM) is the foundation of organizational security. Yet, even the most well-intentioned IAM deployments are riddled with misconfigurations that open dangerous backdoors for attackers. In today’s cloud-first and hybrid work environments, a single oversight in IAM can lead to data breaches, compliance violations, and business disruptions.</p>
+<p>In this article, we’ll walk through the most common IAM misconfigurations—and how to avoid them using practical strategies, with real-world examples to highlight the risks.</p>
+<p>###Overprovisioned Access</p>
+<p>The <strong>Problem</strong>:
+Users are granted more privileges than necessary, creating a wider attack surface.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Implement RBAC or ABAC models.</li>
+<li>Conduct quarterly access reviews.</li>
+<li>Use Just-In-Time access for elevated privileges.</li>
+</ul>
+<p><strong>Real-World Example:</strong></p>
+<p>SolarWinds Breach (2020):
+Threat actors exploited overprivileged accounts to move laterally across networks, accessing sensitive systems and data. The excessive permissions granted to certain accounts amplified the breach’s overall impact. (<em>Avatier</em>)</p>
+<h3 id="inconsistent-mfa-enforcement">Inconsistent MFA Enforcement</h3>
+<p>The <strong>Problem</strong>:
+MFA is not consistently applied across users and systems, creating exploitable gaps.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Enforce MFA for all users and apps.</li>
+<li>Use conditional access policies to apply MFA based on risk.</li>
+<li>Prefer phishing-resistant MFA methods like FIDO2 over SMS.</li>
+</ul>
+<p><strong>Real-World Example:</strong></p>
+<p>Citrix Gateway Breach:
+Attackers compromised employee credentials via a Citrix gateway that lacked enforced MFA, leading to unauthorized internal network access and eventual ransomware deployment. (<em>Silverfort</em>)</p>
+<h3 id="orphaned-accounts">Orphaned Accounts</h3>
+<p>The <strong>Problem</strong>:
+Former employees, vendors, or contractors retain active credentials.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Integrate HR systems with IAM platforms for automatic offboarding.</li>
+<li>Set up immediate disablement workflows.</li>
+<li>Run monthly orphan account audits.</li>
+</ul>
+<p><strong>Real-World Example:</strong>
+Internet Archive Breach:
+An access token exposed in a GitLab repository for 22 months was exploited by attackers, leading to unauthorized access and the exfiltration of 7TB of data. (Aembit)</p>
+<h3 id="poorly-configured-delegated-admin-access">Poorly Configured Delegated Admin Access</h3>
+<p>The <strong>Problem</strong>:
+Delegated administration often grants too much control without scope limitations.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Use scoped administrative roles (e.g., Admin Units, custom admin roles).</li>
+<li>Apply least-privilege delegation.</li>
+<li>Audit admin activities using logs and SIEM tools.</li>
+</ul>
+<p><strong>Real-World Example:</strong>
+AWS IAM Role Misconfiguration:
+Misconfigured IAM roles allowed users to modify role trust policies, potentially escalating their own privileges within AWS environments. (<em>Appsecco</em>)</p>
+<h3 id="lack-of-session-management">Lack of Session Management</h3>
+<p>The <strong>Problem</strong>:
+Without session timeouts or reauthentication policies, users can remain logged into sensitive systems indefinitely.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Implement session expiration policies based on inactivity.</li>
+<li>Use step-up authentication for sensitive transactions.</li>
+<li>Monitor session hijacking attempts.</li>
+</ul>
+<p><strong>Real-World Example:</strong>
+Session Poisoning Attacks:
+Attackers have exploited poorly managed sessions to manipulate variables and hijack user sessions, gaining unauthorized access to application functionality. (<em>Wikipedia</em>)</p>
+<h3 id="inadequate-logging-and-monitoring">Inadequate Logging and Monitoring</h3>
+<p>The <strong>Problem</strong>:
+IAM logs exist but are often ignored or siloed, leading to blind spots.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Centralize IAM logs into a SIEM platform.</li>
+<li>Set alerts for suspicious behaviors (e.g., impossible travel, privilege escalation).</li>
+<li>Regularly review logs during security operations.</li>
+</ul>
+<p><strong>Real-World Example:</strong>
+Capital One Data Breach (2019):
+A misconfigured firewall enabled unauthorized access to data, but the lack of effective IAM monitoring delayed detection and escalation. (<em>Sonrai Security</em>)</p>
+<h3 id="weak-identity-federation-trust">Weak Identity Federation Trust</h3>
+<p>The <strong>Problem</strong>:
+Organizations federate with external partners or SaaS platforms without enforcing strong trust and security controls.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Vet and monitor external IdPs regularly.</li>
+<li>Enforce strict federation policies (e.g., SAML assertion encryption, MFA requirements).</li>
+<li>Require compliance standards for all federation partners.</li>
+</ul>
+<p>Real-World Example:
+AWS Cross-Account Misconfiguration:
+A penetration test revealed that weak IAM policy configurations enabled unauthorized read/write access to critical data in S3 buckets. (<em>Horizon3.ai</em>)</p>
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+<p>IAM misconfigurations are strategic vulnerabilities. As identity becomes the modern security perimeter, failing to harden IAM configurations leaves organizations wide open to increasingly sophisticated threats.</p>
+<p>By proactively addressing these seven common misconfigurations—and learning from real-world breaches—you can significantly strengthen your organization’s identity posture and reduce risk.</p>
+<p>Small IAM mistakes today can lead to catastrophic breaches tomorrow.</p>
+<h3 id="call-to-action"><strong>Call to Action</strong></h3>
+<p>Ready to improve your IAM health?</p>
+<p>👉 Download our free 
+
+<a href="/checklists/IAM-Health-Check-Checklist.pdf" target="_blank" rel="noopener">
+  IAM Health Check Checklist
+</a>
+ and start securing your environment today!</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

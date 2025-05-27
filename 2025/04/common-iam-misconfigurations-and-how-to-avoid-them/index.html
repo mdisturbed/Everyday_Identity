@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Common IAM Misconfigurations and How to Avoid Them | Everyday Identity</title>
+<meta name="keywords" content="IAM misconfigurations, least privilege, RBAC, cloud-first, hybrid work">
+<meta name="description" content="
+Introduction
+Identity and Access Management (IAM) is the foundation of organizational security. Yet, even the most well-intentioned IAM deployments are riddled with misconfigurations that open dangerous backdoors for attackers. In today’s cloud-first and hybrid work environments, a single oversight in IAM can lead to data breaches, compliance violations, and business disruptions.
+In this article, we’ll walk through the most common IAM misconfigurations—and how to avoid them using practical strategies, with real-world examples to highlight the risks.">
+<meta name="author" content="Jay Klinkowsky">
+<link rel="canonical" href="https://everydayidentity.local/2025/04/common-iam-misconfigurations-and-how-to-avoid-them/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://everydayidentity.local/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://everydayidentity.local/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://everydayidentity.local/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://everydayidentity.local/apple-touch-icon.png">
+<link rel="mask-icon" href="https://everydayidentity.local/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://everydayidentity.local/2025/04/common-iam-misconfigurations-and-how-to-avoid-them/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://everydayidentity.local/2025/04/common-iam-misconfigurations-and-how-to-avoid-them/">
+  <meta property="og:site_name" content="Everyday Identity">
+  <meta property="og:title" content="Common IAM Misconfigurations and How to Avoid Them">
+  <meta property="og:description" content="
+Introduction Identity and Access Management (IAM) is the foundation of organizational security. Yet, even the most well-intentioned IAM deployments are riddled with misconfigurations that open dangerous backdoors for attackers. In today’s cloud-first and hybrid work environments, a single oversight in IAM can lead to data breaches, compliance violations, and business disruptions.
+In this article, we’ll walk through the most common IAM misconfigurations—and how to avoid them using practical strategies, with real-world examples to highlight the risks.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-30T09:00:00-04:00">
+    <meta property="article:modified_time" content="2025-04-30T09:00:00-04:00">
+    <meta property="article:tag" content="IAM Misconfigurations">
+    <meta property="article:tag" content="Least Privilege">
+    <meta property="article:tag" content="RBAC">
+    <meta property="article:tag" content="Cloud-First">
+    <meta property="article:tag" content="Hybrid Work">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Common IAM Misconfigurations and How to Avoid Them">
+<meta name="twitter:description" content="
+Introduction
+Identity and Access Management (IAM) is the foundation of organizational security. Yet, even the most well-intentioned IAM deployments are riddled with misconfigurations that open dangerous backdoors for attackers. In today’s cloud-first and hybrid work environments, a single oversight in IAM can lead to data breaches, compliance violations, and business disruptions.
+In this article, we’ll walk through the most common IAM misconfigurations—and how to avoid them using practical strategies, with real-world examples to highlight the risks.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://everydayidentity.local/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Common IAM Misconfigurations and How to Avoid Them",
+      "item": "https://everydayidentity.local/2025/04/common-iam-misconfigurations-and-how-to-avoid-them/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Common IAM Misconfigurations and How to Avoid Them",
+  "name": "Common IAM Misconfigurations and How to Avoid Them",
+  "description": "\nIntroduction Identity and Access Management (IAM) is the foundation of organizational security. Yet, even the most well-intentioned IAM deployments are riddled with misconfigurations that open dangerous backdoors for attackers. In today’s cloud-first and hybrid work environments, a single oversight in IAM can lead to data breaches, compliance violations, and business disruptions.\nIn this article, we’ll walk through the most common IAM misconfigurations—and how to avoid them using practical strategies, with real-world examples to highlight the risks.\n",
+  "keywords": [
+    "IAM misconfigurations", "least privilege", "RBAC", "cloud-first", "hybrid work"
+  ],
+  "articleBody": "\nIntroduction Identity and Access Management (IAM) is the foundation of organizational security. Yet, even the most well-intentioned IAM deployments are riddled with misconfigurations that open dangerous backdoors for attackers. In today’s cloud-first and hybrid work environments, a single oversight in IAM can lead to data breaches, compliance violations, and business disruptions.\nIn this article, we’ll walk through the most common IAM misconfigurations—and how to avoid them using practical strategies, with real-world examples to highlight the risks.\n###Overprovisioned Access\nThe Problem: Users are granted more privileges than necessary, creating a wider attack surface.\nHow to Avoid It:\nImplement RBAC or ABAC models. Conduct quarterly access reviews. Use Just-In-Time access for elevated privileges. Real-World Example:\nSolarWinds Breach (2020): Threat actors exploited overprivileged accounts to move laterally across networks, accessing sensitive systems and data. The excessive permissions granted to certain accounts amplified the breach’s overall impact. (Avatier)\nInconsistent MFA Enforcement The Problem: MFA is not consistently applied across users and systems, creating exploitable gaps.\nHow to Avoid It:\nEnforce MFA for all users and apps. Use conditional access policies to apply MFA based on risk. Prefer phishing-resistant MFA methods like FIDO2 over SMS. Real-World Example:\nCitrix Gateway Breach: Attackers compromised employee credentials via a Citrix gateway that lacked enforced MFA, leading to unauthorized internal network access and eventual ransomware deployment. (Silverfort)\nOrphaned Accounts The Problem: Former employees, vendors, or contractors retain active credentials.\nHow to Avoid It:\nIntegrate HR systems with IAM platforms for automatic offboarding. Set up immediate disablement workflows. Run monthly orphan account audits. Real-World Example: Internet Archive Breach: An access token exposed in a GitLab repository for 22 months was exploited by attackers, leading to unauthorized access and the exfiltration of 7TB of data. (Aembit)\nPoorly Configured Delegated Admin Access The Problem: Delegated administration often grants too much control without scope limitations.\nHow to Avoid It:\nUse scoped administrative roles (e.g., Admin Units, custom admin roles). Apply least-privilege delegation. Audit admin activities using logs and SIEM tools. Real-World Example: AWS IAM Role Misconfiguration: Misconfigured IAM roles allowed users to modify role trust policies, potentially escalating their own privileges within AWS environments. (Appsecco)\nLack of Session Management The Problem: Without session timeouts or reauthentication policies, users can remain logged into sensitive systems indefinitely.\nHow to Avoid It:\nImplement session expiration policies based on inactivity. Use step-up authentication for sensitive transactions. Monitor session hijacking attempts. Real-World Example: Session Poisoning Attacks: Attackers have exploited poorly managed sessions to manipulate variables and hijack user sessions, gaining unauthorized access to application functionality. (Wikipedia)\nInadequate Logging and Monitoring The Problem: IAM logs exist but are often ignored or siloed, leading to blind spots.\nHow to Avoid It:\nCentralize IAM logs into a SIEM platform. Set alerts for suspicious behaviors (e.g., impossible travel, privilege escalation). Regularly review logs during security operations. Real-World Example: Capital One Data Breach (2019): A misconfigured firewall enabled unauthorized access to data, but the lack of effective IAM monitoring delayed detection and escalation. (Sonrai Security)\nWeak Identity Federation Trust The Problem: Organizations federate with external partners or SaaS platforms without enforcing strong trust and security controls.\nHow to Avoid It:\nVet and monitor external IdPs regularly. Enforce strict federation policies (e.g., SAML assertion encryption, MFA requirements). Require compliance standards for all federation partners. Real-World Example: AWS Cross-Account Misconfiguration: A penetration test revealed that weak IAM policy configurations enabled unauthorized read/write access to critical data in S3 buckets. (Horizon3.ai)\nConclusion IAM misconfigurations are strategic vulnerabilities. As identity becomes the modern security perimeter, failing to harden IAM configurations leaves organizations wide open to increasingly sophisticated threats.\nBy proactively addressing these seven common misconfigurations—and learning from real-world breaches—you can significantly strengthen your organization’s identity posture and reduce risk.\nSmall IAM mistakes today can lead to catastrophic breaches tomorrow.\nCall to Action Ready to improve your IAM health?\n👉 Download our free IAM Health Check Checklist and start securing your environment today!\n",
+  "wordCount" : "645",
+  "inLanguage": "en",
+  "datePublished": "2025-04-30T09:00:00-04:00",
+  "dateModified": "2025-04-30T09:00:00-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Klinkowsky"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://everydayidentity.local/2025/04/common-iam-misconfigurations-and-how-to-avoid-them/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Everyday Identity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://everydayidentity.local/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+
+<header class="header">
+  <nav class="nav">
+
+    
+    <div class="logo">
+  
+  
+  <a class="site-logo" href="https://everydayidentity.local/" title="Everyday Identity">
+    <img
+      src="https://everydayidentity.local/images/Everyday_Identity_logo_transparent.png"
+      alt="Everyday Identity"
+      height="40"
+    >
+    Everyday Identity
+  </a>
+  
+</div>
+
+    
+    <ul id="menu">
+        <li>
+          <a href="https://everydayidentity.local/"
+             title="Home">
+            <span>
+              Home
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/posts/"
+             title="Posts">
+            <span>
+              Posts
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/checklists/"
+             title="Checklists">
+            <span>
+              Checklists
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/policies/"
+             title="Policies">
+            <span>
+              Policies
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/categories/"
+             title="Categories">
+            <span>
+              Categories
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/tags/"
+             title="Tags">
+            <span>
+              Tags
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/contact/"
+             title="Contact">
+            <span>
+              Contact
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/"
+             title="">
+            <span>
+              <button id='theme-toggle' aria-label='Toggle theme'></button>
+            </span>
+          </a>
+        </li>
+    </ul>
+
+  </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://everydayidentity.local/">Home</a>&nbsp;»&nbsp;<a href="https://everydayidentity.local/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Common IAM Misconfigurations and How to Avoid Them
+    </h1>
+    <div class="post-meta"><span title='2025-04-30 09:00:00 -0400 EDT'>April 30, 2025</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Jay Klinkowsky
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#introduction" aria-label="Introduction">Introduction</a><ul>
+                        
+                <li>
+                    <a href="#inconsistent-mfa-enforcement" aria-label="Inconsistent MFA Enforcement">Inconsistent MFA Enforcement</a></li>
+                <li>
+                    <a href="#orphaned-accounts" aria-label="Orphaned Accounts">Orphaned Accounts</a></li>
+                <li>
+                    <a href="#poorly-configured-delegated-admin-access" aria-label="Poorly Configured Delegated Admin Access">Poorly Configured Delegated Admin Access</a></li>
+                <li>
+                    <a href="#lack-of-session-management" aria-label="Lack of Session Management">Lack of Session Management</a></li>
+                <li>
+                    <a href="#inadequate-logging-and-monitoring" aria-label="Inadequate Logging and Monitoring">Inadequate Logging and Monitoring</a></li>
+                <li>
+                    <a href="#weak-identity-federation-trust" aria-label="Weak Identity Federation Trust">Weak Identity Federation Trust</a></li></ul>
+                </li>
+                <li>
+                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a><ul>
+                        
+                <li>
+                    <a href="#call-to-action" aria-label="Call to Action">Call to Action</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><img alt="Image" loading="lazy" src="/post_seven.png"></p>
+<h2 id="introduction"><strong>Introduction</strong><a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>Identity and Access Management (IAM) is the foundation of organizational security. Yet, even the most well-intentioned IAM deployments are riddled with misconfigurations that open dangerous backdoors for attackers. In today’s cloud-first and hybrid work environments, a single oversight in IAM can lead to data breaches, compliance violations, and business disruptions.</p>
+<p>In this article, we’ll walk through the most common IAM misconfigurations—and how to avoid them using practical strategies, with real-world examples to highlight the risks.</p>
+<p>###Overprovisioned Access</p>
+<p>The <strong>Problem</strong>:
+Users are granted more privileges than necessary, creating a wider attack surface.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Implement RBAC or ABAC models.</li>
+<li>Conduct quarterly access reviews.</li>
+<li>Use Just-In-Time access for elevated privileges.</li>
+</ul>
+<p><strong>Real-World Example:</strong></p>
+<p>SolarWinds Breach (2020):
+Threat actors exploited overprivileged accounts to move laterally across networks, accessing sensitive systems and data. The excessive permissions granted to certain accounts amplified the breach’s overall impact. (<em>Avatier</em>)</p>
+<h3 id="inconsistent-mfa-enforcement">Inconsistent MFA Enforcement<a hidden class="anchor" aria-hidden="true" href="#inconsistent-mfa-enforcement">#</a></h3>
+<p>The <strong>Problem</strong>:
+MFA is not consistently applied across users and systems, creating exploitable gaps.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Enforce MFA for all users and apps.</li>
+<li>Use conditional access policies to apply MFA based on risk.</li>
+<li>Prefer phishing-resistant MFA methods like FIDO2 over SMS.</li>
+</ul>
+<p><strong>Real-World Example:</strong></p>
+<p>Citrix Gateway Breach:
+Attackers compromised employee credentials via a Citrix gateway that lacked enforced MFA, leading to unauthorized internal network access and eventual ransomware deployment. (<em>Silverfort</em>)</p>
+<h3 id="orphaned-accounts">Orphaned Accounts<a hidden class="anchor" aria-hidden="true" href="#orphaned-accounts">#</a></h3>
+<p>The <strong>Problem</strong>:
+Former employees, vendors, or contractors retain active credentials.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Integrate HR systems with IAM platforms for automatic offboarding.</li>
+<li>Set up immediate disablement workflows.</li>
+<li>Run monthly orphan account audits.</li>
+</ul>
+<p><strong>Real-World Example:</strong>
+Internet Archive Breach:
+An access token exposed in a GitLab repository for 22 months was exploited by attackers, leading to unauthorized access and the exfiltration of 7TB of data. (Aembit)</p>
+<h3 id="poorly-configured-delegated-admin-access">Poorly Configured Delegated Admin Access<a hidden class="anchor" aria-hidden="true" href="#poorly-configured-delegated-admin-access">#</a></h3>
+<p>The <strong>Problem</strong>:
+Delegated administration often grants too much control without scope limitations.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Use scoped administrative roles (e.g., Admin Units, custom admin roles).</li>
+<li>Apply least-privilege delegation.</li>
+<li>Audit admin activities using logs and SIEM tools.</li>
+</ul>
+<p><strong>Real-World Example:</strong>
+AWS IAM Role Misconfiguration:
+Misconfigured IAM roles allowed users to modify role trust policies, potentially escalating their own privileges within AWS environments. (<em>Appsecco</em>)</p>
+<h3 id="lack-of-session-management">Lack of Session Management<a hidden class="anchor" aria-hidden="true" href="#lack-of-session-management">#</a></h3>
+<p>The <strong>Problem</strong>:
+Without session timeouts or reauthentication policies, users can remain logged into sensitive systems indefinitely.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Implement session expiration policies based on inactivity.</li>
+<li>Use step-up authentication for sensitive transactions.</li>
+<li>Monitor session hijacking attempts.</li>
+</ul>
+<p><strong>Real-World Example:</strong>
+Session Poisoning Attacks:
+Attackers have exploited poorly managed sessions to manipulate variables and hijack user sessions, gaining unauthorized access to application functionality. (<em>Wikipedia</em>)</p>
+<h3 id="inadequate-logging-and-monitoring">Inadequate Logging and Monitoring<a hidden class="anchor" aria-hidden="true" href="#inadequate-logging-and-monitoring">#</a></h3>
+<p>The <strong>Problem</strong>:
+IAM logs exist but are often ignored or siloed, leading to blind spots.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Centralize IAM logs into a SIEM platform.</li>
+<li>Set alerts for suspicious behaviors (e.g., impossible travel, privilege escalation).</li>
+<li>Regularly review logs during security operations.</li>
+</ul>
+<p><strong>Real-World Example:</strong>
+Capital One Data Breach (2019):
+A misconfigured firewall enabled unauthorized access to data, but the lack of effective IAM monitoring delayed detection and escalation. (<em>Sonrai Security</em>)</p>
+<h3 id="weak-identity-federation-trust">Weak Identity Federation Trust<a hidden class="anchor" aria-hidden="true" href="#weak-identity-federation-trust">#</a></h3>
+<p>The <strong>Problem</strong>:
+Organizations federate with external partners or SaaS platforms without enforcing strong trust and security controls.</p>
+<p>How to Avoid It:</p>
+<ul>
+<li>Vet and monitor external IdPs regularly.</li>
+<li>Enforce strict federation policies (e.g., SAML assertion encryption, MFA requirements).</li>
+<li>Require compliance standards for all federation partners.</li>
+</ul>
+<p>Real-World Example:
+AWS Cross-Account Misconfiguration:
+A penetration test revealed that weak IAM policy configurations enabled unauthorized read/write access to critical data in S3 buckets. (<em>Horizon3.ai</em>)</p>
+<h2 id="conclusion"><strong>Conclusion</strong><a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>IAM misconfigurations are strategic vulnerabilities. As identity becomes the modern security perimeter, failing to harden IAM configurations leaves organizations wide open to increasingly sophisticated threats.</p>
+<p>By proactively addressing these seven common misconfigurations—and learning from real-world breaches—you can significantly strengthen your organization’s identity posture and reduce risk.</p>
+<p>Small IAM mistakes today can lead to catastrophic breaches tomorrow.</p>
+<h3 id="call-to-action"><strong>Call to Action</strong><a hidden class="anchor" aria-hidden="true" href="#call-to-action">#</a></h3>
+<p>Ready to improve your IAM health?</p>
+<p>👉 Download our free 
+
+<a href="/checklists/IAM-Health-Check-Checklist.pdf" target="_blank" rel="noopener">
+  IAM Health Check Checklist
+</a>
+ and start securing your environment today!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://everydayidentity.local/tags/iam-misconfigurations/">IAM Misconfigurations</a></li>
+      <li><a href="https://everydayidentity.local/tags/least-privilege/">Least Privilege</a></li>
+      <li><a href="https://everydayidentity.local/tags/rbac/">RBAC</a></li>
+      <li><a href="https://everydayidentity.local/tags/cloud-first/">Cloud-First</a></li>
+      <li><a href="https://everydayidentity.local/tags/hybrid-work/">Hybrid Work</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://everydayidentity.local/2025/05/iam-101-what-is-identity-and-access-management-iam/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>IAM 101: What is Identity and Access Management (IAM)?</span>
+  </a>
+  <a class="next" href="https://everydayidentity.local/2025/04/responsible-use-of-ai-and-checks-balances/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Responsible Use of AI and Checks &amp; Balances</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://everydayidentity.local/">Everyday Identity</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

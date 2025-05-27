@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Passwords in the Wild | Everyday Identity</title>
+<meta name="keywords" content="password hygiene, credential leaks, breach analysis, password policy, passphrase">
+<meta name="description" content="
+In today&rsquo;s digital age, protecting your online identity and personal information has become more crucial than ever. Cyber threats are continually evolving, and one of the most effective ways to safeguard yourself against these risks is by practicing excellent password hygiene. Here&rsquo;s why it matters and what steps you can take to ensure your passwords are strong and secure.
+Why Password Hygiene Matters
+Every day, cybercriminals attempt to exploit weak passwords to gain unauthorized access to sensitive personal, financial, and professional information. According to Verizon’s 2023 Data Breach Investigations Report, compromised passwords account for 81% of hacking-related breaches. Poor password practices can lead to identity theft, financial losses, and even damage to your reputation. Adopting robust password habits drastically reduces your vulnerability and helps ensure your digital safety.">
+<meta name="author" content="Jay Klinkowsky">
+<link rel="canonical" href="https://everydayidentity.local/2025/03/passwords-in-the-wild/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://everydayidentity.local/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://everydayidentity.local/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://everydayidentity.local/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://everydayidentity.local/apple-touch-icon.png">
+<link rel="mask-icon" href="https://everydayidentity.local/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://everydayidentity.local/2025/03/passwords-in-the-wild/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://everydayidentity.local/2025/03/passwords-in-the-wild/">
+  <meta property="og:site_name" content="Everyday Identity">
+  <meta property="og:title" content="Passwords in the Wild">
+  <meta property="og:description" content=" In today’s digital age, protecting your online identity and personal information has become more crucial than ever. Cyber threats are continually evolving, and one of the most effective ways to safeguard yourself against these risks is by practicing excellent password hygiene. Here’s why it matters and what steps you can take to ensure your passwords are strong and secure.
+Why Password Hygiene Matters Every day, cybercriminals attempt to exploit weak passwords to gain unauthorized access to sensitive personal, financial, and professional information. According to Verizon’s 2023 Data Breach Investigations Report, compromised passwords account for 81% of hacking-related breaches. Poor password practices can lead to identity theft, financial losses, and even damage to your reputation. Adopting robust password habits drastically reduces your vulnerability and helps ensure your digital safety.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-18T15:05:44-04:00">
+    <meta property="article:modified_time" content="2025-03-18T15:05:44-04:00">
+    <meta property="article:tag" content="Password Hygiene">
+    <meta property="article:tag" content="Credential Leaks">
+    <meta property="article:tag" content="Breach Analysis">
+    <meta property="article:tag" content="Password Policy">
+    <meta property="article:tag" content="Passphrase">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Passwords in the Wild">
+<meta name="twitter:description" content="
+In today&rsquo;s digital age, protecting your online identity and personal information has become more crucial than ever. Cyber threats are continually evolving, and one of the most effective ways to safeguard yourself against these risks is by practicing excellent password hygiene. Here&rsquo;s why it matters and what steps you can take to ensure your passwords are strong and secure.
+Why Password Hygiene Matters
+Every day, cybercriminals attempt to exploit weak passwords to gain unauthorized access to sensitive personal, financial, and professional information. According to Verizon’s 2023 Data Breach Investigations Report, compromised passwords account for 81% of hacking-related breaches. Poor password practices can lead to identity theft, financial losses, and even damage to your reputation. Adopting robust password habits drastically reduces your vulnerability and helps ensure your digital safety.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://everydayidentity.local/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Passwords in the Wild",
+      "item": "https://everydayidentity.local/2025/03/passwords-in-the-wild/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Passwords in the Wild",
+  "name": "Passwords in the Wild",
+  "description": " In today\u0026rsquo;s digital age, protecting your online identity and personal information has become more crucial than ever. Cyber threats are continually evolving, and one of the most effective ways to safeguard yourself against these risks is by practicing excellent password hygiene. Here\u0026rsquo;s why it matters and what steps you can take to ensure your passwords are strong and secure.\nWhy Password Hygiene Matters Every day, cybercriminals attempt to exploit weak passwords to gain unauthorized access to sensitive personal, financial, and professional information. According to Verizon’s 2023 Data Breach Investigations Report, compromised passwords account for 81% of hacking-related breaches. Poor password practices can lead to identity theft, financial losses, and even damage to your reputation. Adopting robust password habits drastically reduces your vulnerability and helps ensure your digital safety.\n",
+  "keywords": [
+    "password hygiene", "credential leaks", "breach analysis", "password policy", "passphrase"
+  ],
+  "articleBody": " In today’s digital age, protecting your online identity and personal information has become more crucial than ever. Cyber threats are continually evolving, and one of the most effective ways to safeguard yourself against these risks is by practicing excellent password hygiene. Here’s why it matters and what steps you can take to ensure your passwords are strong and secure.\nWhy Password Hygiene Matters Every day, cybercriminals attempt to exploit weak passwords to gain unauthorized access to sensitive personal, financial, and professional information. According to Verizon’s 2023 Data Breach Investigations Report, compromised passwords account for 81% of hacking-related breaches. Poor password practices can lead to identity theft, financial losses, and even damage to your reputation. Adopting robust password habits drastically reduces your vulnerability and helps ensure your digital safety.\nEssential Password Hygiene Practices Regularly Change Your Passwords The Cybersecurity \u0026 Infrastructure Security Agency (CISA) recommends periodically updating passwords—every three to six months—to reduce the likelihood of breaches due to compromised credentials.\nMinimum 15-Character Passwords According to research from Microsoft, passwords with 15 or more characters significantly increase the difficulty for automated tools to crack passwords, making longer passwords exponentially more secure than shorter ones.\nAvoid Using Personal Details The Federal Trade Commission (FTC) advises against using easily guessable personal details such as birthdays, anniversaries, pet names, or addresses in passwords, as cybercriminals often harvest these details from social media profiles.\nUnique Passwords for Every Login According to a Google study, 52% of users reuse the same password across multiple accounts. This practice significantly increases vulnerability, as one compromised account can expose all others.\nLeverage a Password Manager The National Institute of Standards and Technology (NIST) advocates using password managers, as these tools help generate strong, unique passwords and securely store your login information, greatly simplifying password management while enhancing security.\nConclusion Adopting robust password hygiene isn’t merely a recommendation; it’s essential in our increasingly interconnected world. Regularly updating passwords, using complex and lengthy passwords, avoiding personal details, creating unique passwords for every login, and employing a password manager can significantly enhance your digital security. Protect your digital identity today—make excellent password hygiene a non-negotiable part of your online life.\n",
+  "wordCount" : "358",
+  "inLanguage": "en",
+  "datePublished": "2025-03-18T15:05:44-04:00",
+  "dateModified": "2025-03-18T15:05:44-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Klinkowsky"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://everydayidentity.local/2025/03/passwords-in-the-wild/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Everyday Identity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://everydayidentity.local/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+
+<header class="header">
+  <nav class="nav">
+
+    
+    <div class="logo">
+  
+  
+  <a class="site-logo" href="https://everydayidentity.local/" title="Everyday Identity">
+    <img
+      src="https://everydayidentity.local/images/Everyday_Identity_logo_transparent.png"
+      alt="Everyday Identity"
+      height="40"
+    >
+    Everyday Identity
+  </a>
+  
+</div>
+
+    
+    <ul id="menu">
+        <li>
+          <a href="https://everydayidentity.local/"
+             title="Home">
+            <span>
+              Home
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/posts/"
+             title="Posts">
+            <span>
+              Posts
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/checklists/"
+             title="Checklists">
+            <span>
+              Checklists
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/policies/"
+             title="Policies">
+            <span>
+              Policies
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/categories/"
+             title="Categories">
+            <span>
+              Categories
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/tags/"
+             title="Tags">
+            <span>
+              Tags
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/contact/"
+             title="Contact">
+            <span>
+              Contact
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/"
+             title="">
+            <span>
+              <button id='theme-toggle' aria-label='Toggle theme'></button>
+            </span>
+          </a>
+        </li>
+    </ul>
+
+  </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://everydayidentity.local/">Home</a>&nbsp;»&nbsp;<a href="https://everydayidentity.local/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Passwords in the Wild
+    </h1>
+    <div class="post-meta"><span title='2025-03-18 15:05:44 -0400 EDT'>March 18, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Jay Klinkowsky
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#why-password-hygiene-matters" aria-label="Why Password Hygiene Matters">Why Password Hygiene Matters</a></li>
+                <li>
+                    <a href="#essential-password-hygiene-practices" aria-label="Essential Password Hygiene Practices">Essential Password Hygiene Practices</a></li>
+                <li>
+                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><img alt="Image" loading="lazy" src="/post_three.png">
+In today&rsquo;s digital age, protecting your online identity and personal information has become more crucial than ever. Cyber threats are continually evolving, and one of the most effective ways to safeguard yourself against these risks is by practicing excellent password hygiene. Here&rsquo;s why it matters and what steps you can take to ensure your passwords are strong and secure.</p>
+<h3 id="why-password-hygiene-matters">Why Password Hygiene Matters<a hidden class="anchor" aria-hidden="true" href="#why-password-hygiene-matters">#</a></h3>
+<p>Every day, cybercriminals attempt to exploit weak passwords to gain unauthorized access to sensitive personal, financial, and professional information. According to Verizon’s 2023 Data Breach Investigations Report, compromised passwords account for 81% of hacking-related breaches. Poor password practices can lead to identity theft, financial losses, and even damage to your reputation. Adopting robust password habits drastically reduces your vulnerability and helps ensure your digital safety.</p>
+<h3 id="essential-password-hygiene-practices">Essential Password Hygiene Practices<a hidden class="anchor" aria-hidden="true" href="#essential-password-hygiene-practices">#</a></h3>
+<ol>
+<li>
+<p>Regularly Change Your Passwords
+The Cybersecurity &amp; Infrastructure Security Agency (CISA) recommends periodically updating passwords—every three to six months—to reduce the likelihood of breaches due to compromised credentials.</p>
+</li>
+<li>
+<p>Minimum 15-Character Passwords
+According to research from Microsoft, passwords with 15 or more characters significantly increase the difficulty for automated tools to crack passwords, making longer passwords exponentially more secure than shorter ones.</p>
+</li>
+<li>
+<p>Avoid Using Personal Details
+The Federal Trade Commission (FTC) advises against using easily guessable personal details such as birthdays, anniversaries, pet names, or addresses in passwords, as cybercriminals often harvest these details from social media profiles.</p>
+</li>
+<li>
+<p>Unique Passwords for Every Login
+According to a Google study, 52% of users reuse the same password across multiple accounts. This practice significantly increases vulnerability, as one compromised account can expose all others.</p>
+</li>
+<li>
+<p>Leverage a Password Manager
+The National Institute of Standards and Technology (NIST) advocates using password managers, as these tools help generate strong, unique passwords and securely store your login information, greatly simplifying password management while enhancing security.</p>
+</li>
+</ol>
+<h3 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h3>
+<p>Adopting robust password hygiene isn&rsquo;t merely a recommendation; it&rsquo;s essential in our increasingly interconnected world. Regularly updating passwords, using complex and lengthy passwords, avoiding personal details, creating unique passwords for every login, and employing a password manager can significantly enhance your digital security.
+Protect your digital identity today—make excellent password hygiene a non-negotiable part of your online life.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://everydayidentity.local/tags/password-hygiene/">Password Hygiene</a></li>
+      <li><a href="https://everydayidentity.local/tags/credential-leaks/">Credential Leaks</a></li>
+      <li><a href="https://everydayidentity.local/tags/breach-analysis/">Breach Analysis</a></li>
+      <li><a href="https://everydayidentity.local/tags/password-policy/">Password Policy</a></li>
+      <li><a href="https://everydayidentity.local/tags/passphrase/">Passphrase</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://everydayidentity.local/2025/03/ai-pii-privacy-risks/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Ai Pii Privacy Risks</span>
+  </a>
+  <a class="next" href="https://everydayidentity.local/2025/03/the-high-cost-of-poor-privileged-account-management/">
+    <span class="title">Next »</span>
+    <br>
+    <span>The High Cost of Poor Privileged Account Management</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://everydayidentity.local/">Everyday Identity</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

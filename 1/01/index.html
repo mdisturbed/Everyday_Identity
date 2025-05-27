@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Everyday Identity</title>
+<meta name="keywords" content="">
+<meta name="description" content="TL;DR
+Feeling confident in your organization’s Zero Trust posture? This “Zero Trust Readiness Quiz” leverages the same practical checklist approach I’ve used across enterprises, SMBs, and personal environments to help you gauge where you stand across the seven tenets of Zero Trust defined by NIST SP 800‑207 and CISA’s Zero Trust Maturity Model. Answer ten quick checklist questions about your asset inventory, least‑privilege policies, continuous monitoring, and more. Score your results to identify gaps and prioritize your next steps. (SEO keywords: GPT prompts for SEO)">
+<meta name="author" content="Jay Klinkowsky">
+<link rel="canonical" href="http://localhost:1313/1/01/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/1/01/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/1/01/">
+  <meta property="og:site_name" content="Everyday Identity">
+  <meta property="og:title" content="Everyday Identity">
+  <meta property="og:description" content="TL;DR
+Feeling confident in your organization’s Zero Trust posture? This “Zero Trust Readiness Quiz” leverages the same practical checklist approach I’ve used across enterprises, SMBs, and personal environments to help you gauge where you stand across the seven tenets of Zero Trust defined by NIST SP 800‑207 and CISA’s Zero Trust Maturity Model. Answer ten quick checklist questions about your asset inventory, least‑privilege policies, continuous monitoring, and more. Score your results to identify gaps and prioritize your next steps. (SEO keywords: GPT prompts for SEO)">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="TL;DR
+Feeling confident in your organization’s Zero Trust posture? This “Zero Trust Readiness Quiz” leverages the same practical checklist approach I’ve used across enterprises, SMBs, and personal environments to help you gauge where you stand across the seven tenets of Zero Trust defined by NIST SP 800‑207 and CISA’s Zero Trust Maturity Model. Answer ten quick checklist questions about your asset inventory, least‑privilege policies, continuous monitoring, and more. Score your results to identify gaps and prioritize your next steps. (SEO keywords: GPT prompts for SEO)">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://localhost:1313/1/01/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "TL;DR\nFeeling confident in your organization’s Zero Trust posture? This “Zero Trust Readiness Quiz” leverages the same practical checklist approach I’ve used across enterprises, SMBs, and personal environments to help you gauge where you stand across the seven tenets of Zero Trust defined by NIST SP 800‑207 and CISA’s Zero Trust Maturity Model. Answer ten quick checklist questions about your asset inventory, least‑privilege policies, continuous monitoring, and more. Score your results to identify gaps and prioritize your next steps. (SEO keywords: GPT prompts for SEO)\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "TL;DR\nFeeling confident in your organization’s Zero Trust posture? This “Zero Trust Readiness Quiz” leverages the same practical checklist approach I’ve used across enterprises, SMBs, and personal environments to help you gauge where you stand across the seven tenets of Zero Trust defined by NIST SP 800‑207 and CISA’s Zero Trust Maturity Model. Answer ten quick checklist questions about your asset inventory, least‑privilege policies, continuous monitoring, and more. Score your results to identify gaps and prioritize your next steps. (SEO keywords: GPT prompts for SEO)\nBackground Zero Trust has evolved from a buzzword into a foundational security strategy. Originally coined by Forrester Research over a decade ago, Zero Trust is an information security model that “denies access to applications and data by default,” granting it only after continuous, contextual, risk‑based verification of users and devices :contentReference[oaicite:0]{index=0}. In August 2020, NIST formalized these principles in Special Publication 800‑207, describing Zero Trust as a paradigm that shifts defenses from static, network‑based perimeters to focus on protecting resources—assets, applications, and data—through strict authentication and authorization controls :contentReference[oaicite:1]{index=1}.\nAs a 15‑year IAM professional who has authored comprehensive checklists for organizations of every size and even personal use cases, I’ve guided dozens of teams through the transition to Zero Trust. While every environment is unique, readiness ultimately comes down to how well you can inventory resources, enforce least‑privilege, continuously verify device posture, and monitor all activity. This quiz distills those elements into ten actionable statements so you can quickly assess your readiness and chart a clear roadmap for improvement.\nWhy Zero Trust Matters In today’s hybrid and cloud‑first world, traditional network perimeters no longer provide adequate protection. Adversaries routinely bypass perimeter defenses, compromise credentials, and move laterally in search of high‑value assets. By adopting Zero Trust, organizations reduce the blast radius of breaches by:\nAssuming breach: Treat every user, device, and connection as untrusted until proven otherwise. Enforcing least‑privilege: Grant just enough access for the task at hand, and only for the necessary duration. Implementing continuous monitoring: Collect and analyze telemetry to detect anomalies in real time. CISA’s Zero Trust Maturity Model outlines seven tenets—ranging from securing all communication to dynamic policy enforcement—that serve as a blueprint for this transformation :contentReference[oaicite:2]{index=2}. Organizations that embrace these practices not only harden their defenses but also streamline compliance, reduce operational complexity, and build trust with customers and regulators.\nHow to Use This Quiz This quiz isn’t a pass/fail exam—it’s a structured self‑assessment. For each of the ten statements below, mark Yes if your organization already meets the criteria, or No if it doesn’t. At the end, tally your “Yes” responses to see which Zero Trust pillars may need more attention. Be honest in your answers; the goal is to uncover gaps, not to score a perfect 10/10.\nZero Trust Readiness Quiz The following statements reflect key tenets of Zero Trust as defined by NIST SP 800‑207 and the CISA Zero Trust Maturity Model. Mark each one Yes if it accurately describes your current practices, or No if it does not. :contentReference[oaicite:3]{index=3}\nComprehensive Asset Inventory\nI maintain an up‑to‑date inventory of all hardware, software, data repositories, and network resources. Per‑Session, Per‑Resource Access Control\nAccess to each resource is granted on a per‑session basis, with no implicit trust carried over between sessions. Least‑Privilege Enforcement\nUsers and services have only the minimum privileges necessary to perform their tasks, enforced through role‑based or attribute‑based controls. Multi‑Factor Authentication (MFA)\nMFA is enforced for every access request, regardless of user location or device. Micro‑Segmentation \u0026 Network Controls\nWorkloads are segmented by micro‑perimeters, and network traffic is filtered based on identity and context. Continuous Device Posture Assessment\nDevice health checks—such as patch level, anti‑malware status, and configuration compliance—are evaluated before each connection. Dynamic, Contextual Policy Engine\nAccess decisions integrate real‑time risk signals (e.g., geolocation, time of day, anomalous behavior) to dynamically adjust policies. Comprehensive Telemetry \u0026 Monitoring\nAll authentication, access, and network activity is logged, aggregated, and analyzed for anomalies and incidents. Automated Detection \u0026 Response\nSecurity orchestration tools automatically respond to detected threats—such as revoking credentials, blocking traffic, or isolating workloads. Resource Protection Focus\nSecurity controls center on protecting the data, applications, and services themselves, rather than just network segments. Scoring Your Readiness Once you’ve answered all ten questions, tally your “Yes” responses:\n8–10 Yes: Advanced\nYou’ve implemented most Zero Trust tenets and are well‑positioned to detect and contain threats quickly.\n5–7 Yes: Intermediate\nYou’ve made significant progress, but some pillars—such as continuous monitoring or dynamic policy enforcement—may need further investment.\n0–4 Yes: Beginner\nYour organization is at the start of its Zero Trust journey. Prioritize building a comprehensive asset inventory and enforcing least‑privilege to lay a solid foundation.\nUse this score to prioritize areas for improvement. Even small changes—like rolling out MFA or automating telemetry collection—can dramatically boost your overall security posture.\nNext Steps Gap Analysis\nReview any statements you marked No and document the specific reasons (e.g., lack of tooling, process gaps, or resource constraints).\nAction Planning\nFor each gap, define a clear project:\nInventory: Deploy discovery tools or update CMDBs. MFA \u0026 Least‑Privilege: Roll out adaptive MFA and refine access roles. Monitoring \u0026 Response: Implement SIEM or XDR platforms and build automated playbooks. Continuous Review\nZero Trust is a journey, not a destination. Schedule quarterly reviews of your readiness quiz and adjust priorities as your environment evolves.\nBy systematically working through this quiz and following these next steps—building on the proven checklist methodology I’ve developed for businesses large and small, plus personal security use cases—you’ll close gaps, reduce risk, and establish the resilient, adaptive defenses that modern IT demands.\nAuthored by a 15‑year IAM professional and checklist author for enterprises, SMBs, and personal use.\n",
+  "wordCount" : "943",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Klinkowsky"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/1/01/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Everyday Identity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+
+<header class="header">
+  <nav class="nav">
+
+    
+    <div class="logo">
+  
+  
+  <a class="site-logo" href="http://localhost:1313/" title="Everyday Identity">
+    <img
+      src="http://localhost:1313/images/Everyday_Identity_logo_transparent.png"
+      alt="Everyday Identity"
+      height="40"
+    >
+    Everyday Identity
+  </a>
+  
+</div>
+
+    
+    <ul id="menu">
+        <li>
+          <a href="http://localhost:1313/"
+             title="Home">
+            <span>
+              Home
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/posts/"
+             title="Posts">
+            <span>
+              Posts
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/checklists/"
+             title="Checklists">
+            <span>
+              Checklists
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/policies/"
+             title="Policies">
+            <span>
+              Policies
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/categories/"
+             title="Categories">
+            <span>
+              Categories
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/tags/"
+             title="Tags">
+            <span>
+              Tags
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/contact/"
+             title="Contact">
+            <span>
+              Contact
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:1313/"
+             title="">
+            <span>
+              <button id='theme-toggle' aria-label='Toggle theme'></button>
+            </span>
+          </a>
+        </li>
+    </ul>
+
+  </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">5 min&nbsp;·&nbsp;Jay Klinkowsky
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#background" aria-label="Background">Background</a></li>
+                <li>
+                    <a href="#why-zero-trust-matters" aria-label="Why Zero Trust Matters">Why Zero Trust Matters</a></li>
+                <li>
+                    <a href="#how-to-use-this-quiz" aria-label="How to Use This Quiz">How to Use This Quiz</a></li>
+                <li>
+                    <a href="#zero-trust-readiness-quiz" aria-label="Zero Trust Readiness Quiz">Zero Trust Readiness Quiz</a></li>
+                <li>
+                    <a href="#scoring-your-readiness" aria-label="Scoring Your Readiness">Scoring Your Readiness</a></li>
+                <li>
+                    <a href="#next-steps" aria-label="Next Steps">Next Steps</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><strong>TL;DR</strong><br>
+Feeling confident in your organization’s Zero Trust posture? This “Zero Trust Readiness Quiz” leverages the same practical checklist approach I’ve used across enterprises, SMBs, and personal environments to help you gauge where you stand across the seven tenets of Zero Trust defined by NIST SP 800‑207 and CISA’s Zero Trust Maturity Model. Answer ten quick checklist questions about your asset inventory, least‑privilege policies, continuous monitoring, and more. Score your results to identify gaps and prioritize your next steps. (SEO keywords: GPT prompts for SEO)</p>
+<hr>
+<h2 id="background">Background<a hidden class="anchor" aria-hidden="true" href="#background">#</a></h2>
+<p>Zero Trust has evolved from a buzzword into a foundational security strategy. Originally coined by Forrester Research over a decade ago, Zero Trust is an information security model that “denies access to applications and data by default,” granting it only after continuous, contextual, risk‑based verification of users and devices :contentReference[oaicite:0]{index=0}. In August 2020, NIST formalized these principles in Special Publication 800‑207, describing Zero Trust as a paradigm that shifts defenses from static, network‑based perimeters to focus on protecting resources—assets, applications, and data—through strict authentication and authorization controls :contentReference[oaicite:1]{index=1}.</p>
+<p>As a 15‑year IAM professional who has authored comprehensive checklists for organizations of every size and even personal use cases, I’ve guided dozens of teams through the transition to Zero Trust. While every environment is unique, readiness ultimately comes down to how well you can inventory resources, enforce least‑privilege, continuously verify device posture, and monitor all activity. This quiz distills those elements into ten actionable statements so you can quickly assess your readiness and chart a clear roadmap for improvement.</p>
+<hr>
+<h2 id="why-zero-trust-matters">Why Zero Trust Matters<a hidden class="anchor" aria-hidden="true" href="#why-zero-trust-matters">#</a></h2>
+<p>In today’s hybrid and cloud‑first world, traditional network perimeters no longer provide adequate protection. Adversaries routinely bypass perimeter defenses, compromise credentials, and move laterally in search of high‑value assets. By adopting Zero Trust, organizations reduce the blast radius of breaches by:</p>
+<ul>
+<li><strong>Assuming breach</strong>: Treat every user, device, and connection as untrusted until proven otherwise.</li>
+<li><strong>Enforcing least‑privilege</strong>: Grant just enough access for the task at hand, and only for the necessary duration.</li>
+<li><strong>Implementing continuous monitoring</strong>: Collect and analyze telemetry to detect anomalies in real time.</li>
+</ul>
+<p>CISA’s Zero Trust Maturity Model outlines seven tenets—ranging from securing all communication to dynamic policy enforcement—that serve as a blueprint for this transformation :contentReference[oaicite:2]{index=2}. Organizations that embrace these practices not only harden their defenses but also streamline compliance, reduce operational complexity, and build trust with customers and regulators.</p>
+<hr>
+<h2 id="how-to-use-this-quiz">How to Use This Quiz<a hidden class="anchor" aria-hidden="true" href="#how-to-use-this-quiz">#</a></h2>
+<p>This quiz isn’t a pass/fail exam—it’s a structured self‑assessment. For each of the ten statements below, mark <strong>Yes</strong> if your organization already meets the criteria, or <strong>No</strong> if it doesn’t. At the end, tally your “Yes” responses to see which Zero Trust pillars may need more attention. Be honest in your answers; the goal is to uncover gaps, not to score a perfect 10/10.</p>
+<hr>
+<h2 id="zero-trust-readiness-quiz">Zero Trust Readiness Quiz<a hidden class="anchor" aria-hidden="true" href="#zero-trust-readiness-quiz">#</a></h2>
+<p>The following statements reflect key tenets of Zero Trust as defined by NIST SP 800‑207 and the CISA Zero Trust Maturity Model. Mark each one <strong>Yes</strong> if it accurately describes your current practices, or <strong>No</strong> if it does not. :contentReference[oaicite:3]{index=3}</p>
+<ol>
+<li><strong>Comprehensive Asset Inventory</strong><br>
+I maintain an up‑to‑date inventory of all hardware, software, data repositories, and network resources.</li>
+<li><strong>Per‑Session, Per‑Resource Access Control</strong><br>
+Access to each resource is granted on a per‑session basis, with no implicit trust carried over between sessions.</li>
+<li><strong>Least‑Privilege Enforcement</strong><br>
+Users and services have only the minimum privileges necessary to perform their tasks, enforced through role‑based or attribute‑based controls.</li>
+<li><strong>Multi‑Factor Authentication (MFA)</strong><br>
+MFA is enforced for every access request, regardless of user location or device.</li>
+<li><strong>Micro‑Segmentation &amp; Network Controls</strong><br>
+Workloads are segmented by micro‑perimeters, and network traffic is filtered based on identity and context.</li>
+<li><strong>Continuous Device Posture Assessment</strong><br>
+Device health checks—such as patch level, anti‑malware status, and configuration compliance—are evaluated before each connection.</li>
+<li><strong>Dynamic, Contextual Policy Engine</strong><br>
+Access decisions integrate real‑time risk signals (e.g., geolocation, time of day, anomalous behavior) to dynamically adjust policies.</li>
+<li><strong>Comprehensive Telemetry &amp; Monitoring</strong><br>
+All authentication, access, and network activity is logged, aggregated, and analyzed for anomalies and incidents.</li>
+<li><strong>Automated Detection &amp; Response</strong><br>
+Security orchestration tools automatically respond to detected threats—such as revoking credentials, blocking traffic, or isolating workloads.</li>
+<li><strong>Resource Protection Focus</strong><br>
+Security controls center on protecting the data, applications, and services themselves, rather than just network segments.</li>
+</ol>
+<hr>
+<h2 id="scoring-your-readiness">Scoring Your Readiness<a hidden class="anchor" aria-hidden="true" href="#scoring-your-readiness">#</a></h2>
+<p>Once you’ve answered all ten questions, tally your “Yes” responses:</p>
+<ul>
+<li>
+<p><strong>8–10 Yes</strong>: <strong>Advanced</strong><br>
+You’ve implemented most Zero Trust tenets and are well‑positioned to detect and contain threats quickly.</p>
+</li>
+<li>
+<p><strong>5–7 Yes</strong>: <strong>Intermediate</strong><br>
+You’ve made significant progress, but some pillars—such as continuous monitoring or dynamic policy enforcement—may need further investment.</p>
+</li>
+<li>
+<p><strong>0–4 Yes</strong>: <strong>Beginner</strong><br>
+Your organization is at the start of its Zero Trust journey. Prioritize building a comprehensive asset inventory and enforcing least‑privilege to lay a solid foundation.</p>
+</li>
+</ul>
+<p>Use this score to prioritize areas for improvement. Even small changes—like rolling out MFA or automating telemetry collection—can dramatically boost your overall security posture.</p>
+<hr>
+<h2 id="next-steps">Next Steps<a hidden class="anchor" aria-hidden="true" href="#next-steps">#</a></h2>
+<ol>
+<li>
+<p><strong>Gap Analysis</strong><br>
+Review any statements you marked <strong>No</strong> and document the specific reasons (e.g., lack of tooling, process gaps, or resource constraints).</p>
+</li>
+<li>
+<p><strong>Action Planning</strong><br>
+For each gap, define a clear project:</p>
+<ul>
+<li><strong>Inventory</strong>: Deploy discovery tools or update CMDBs.</li>
+<li><strong>MFA &amp; Least‑Privilege</strong>: Roll out adaptive MFA and refine access roles.</li>
+<li><strong>Monitoring &amp; Response</strong>: Implement SIEM or XDR platforms and build automated playbooks.</li>
+</ul>
+</li>
+<li>
+<p><strong>Continuous Review</strong><br>
+Zero Trust is a journey, not a destination. Schedule quarterly reviews of your readiness quiz and adjust priorities as your environment evolves.</p>
+</li>
+</ol>
+<p>By systematically working through this quiz and following these next steps—building on the proven checklist methodology I’ve developed for businesses large and small, plus personal security use cases—you’ll close gaps, reduce risk, and establish the resilient, adaptive defenses that modern IT demands.</p>
+<hr>
+<p><em>Authored by a 15‑year IAM professional and checklist author for enterprises, SMBs, and personal use.</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Zero Trust Human: Never Trust a Ping Without a Proof</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Everyday Identity</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

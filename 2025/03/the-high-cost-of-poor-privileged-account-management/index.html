@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The High Cost of Poor Privileged Account Management | Everyday Identity</title>
+<meta name="keywords" content="PAM, cost analysis, risk management, account governance, compliance">
+<meta name="description" content="
+In the past year, several major security breaches were traced back to basic failures in privileged account management. Weak controls on admin-level accounts – from not using multi-factor authentication (MFA) to poor password hygiene – have proven to be low-hanging fruit for attackers. Microsoft reports that over 99.9% of compromised accounts lacked MFA, making them easy targets for password attacks (Security at your organization - Multifactor authentication (MFA) statistics - Partner Center | Microsoft Learn). The incidents below show how such oversights led to serious consequences, and how stricter controls could have prevented the damage. This is a wake-up call for executives: reducing your attack surface by locking down admin access isn’t just IT best practice – it’s vital business protection.">
+<meta name="author" content="Jay Klinkowsky">
+<link rel="canonical" href="https://everydayidentity.local/2025/03/the-high-cost-of-poor-privileged-account-management/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://everydayidentity.local/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://everydayidentity.local/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://everydayidentity.local/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://everydayidentity.local/apple-touch-icon.png">
+<link rel="mask-icon" href="https://everydayidentity.local/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://everydayidentity.local/2025/03/the-high-cost-of-poor-privileged-account-management/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://everydayidentity.local/2025/03/the-high-cost-of-poor-privileged-account-management/">
+  <meta property="og:site_name" content="Everyday Identity">
+  <meta property="og:title" content="The High Cost of Poor Privileged Account Management">
+  <meta property="og:description" content=" In the past year, several major security breaches were traced back to basic failures in privileged account management. Weak controls on admin-level accounts – from not using multi-factor authentication (MFA) to poor password hygiene – have proven to be low-hanging fruit for attackers. Microsoft reports that over 99.9% of compromised accounts lacked MFA, making them easy targets for password attacks (Security at your organization - Multifactor authentication (MFA) statistics - Partner Center | Microsoft Learn). The incidents below show how such oversights led to serious consequences, and how stricter controls could have prevented the damage. This is a wake-up call for executives: reducing your attack surface by locking down admin access isn’t just IT best practice – it’s vital business protection.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-14T15:00:08-04:00">
+    <meta property="article:modified_time" content="2025-03-14T15:00:08-04:00">
+    <meta property="article:tag" content="PAM">
+    <meta property="article:tag" content="Cost Analysis">
+    <meta property="article:tag" content="Risk Management">
+    <meta property="article:tag" content="Account Governance">
+    <meta property="article:tag" content="Compliance">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The High Cost of Poor Privileged Account Management">
+<meta name="twitter:description" content="
+In the past year, several major security breaches were traced back to basic failures in privileged account management. Weak controls on admin-level accounts – from not using multi-factor authentication (MFA) to poor password hygiene – have proven to be low-hanging fruit for attackers. Microsoft reports that over 99.9% of compromised accounts lacked MFA, making them easy targets for password attacks (Security at your organization - Multifactor authentication (MFA) statistics - Partner Center | Microsoft Learn). The incidents below show how such oversights led to serious consequences, and how stricter controls could have prevented the damage. This is a wake-up call for executives: reducing your attack surface by locking down admin access isn’t just IT best practice – it’s vital business protection.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://everydayidentity.local/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The High Cost of Poor Privileged Account Management",
+      "item": "https://everydayidentity.local/2025/03/the-high-cost-of-poor-privileged-account-management/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The High Cost of Poor Privileged Account Management",
+  "name": "The High Cost of Poor Privileged Account Management",
+  "description": " In the past year, several major security breaches were traced back to basic failures in privileged account management. Weak controls on admin-level accounts – from not using multi-factor authentication (MFA) to poor password hygiene – have proven to be low-hanging fruit for attackers. Microsoft reports that over 99.9% of compromised accounts lacked MFA, making them easy targets for password attacks (Security at your organization - Multifactor authentication (MFA) statistics - Partner Center | Microsoft Learn). The incidents below show how such oversights led to serious consequences, and how stricter controls could have prevented the damage. This is a wake-up call for executives: reducing your attack surface by locking down admin access isn’t just IT best practice – it’s vital business protection.\n",
+  "keywords": [
+    "PAM", "cost analysis", "risk management", "account governance", "compliance"
+  ],
+  "articleBody": " In the past year, several major security breaches were traced back to basic failures in privileged account management. Weak controls on admin-level accounts – from not using multi-factor authentication (MFA) to poor password hygiene – have proven to be low-hanging fruit for attackers. Microsoft reports that over 99.9% of compromised accounts lacked MFA, making them easy targets for password attacks (Security at your organization - Multifactor authentication (MFA) statistics - Partner Center | Microsoft Learn). The incidents below show how such oversights led to serious consequences, and how stricter controls could have prevented the damage. This is a wake-up call for executives: reducing your attack surface by locking down admin access isn’t just IT best practice – it’s vital business protection.\nAn Orphaned Admin Account Leads to a State Government Breach One recent breach at a U.S. state government agency started with an administrator account of a former employee that was never deactivated. Attackers obtained the ex-employee’s credentials (likely via a leak from a prior breach) and used them to log in through the agency’s VPN – no MFA was required, so a password alone let them in (U.S. State Government Network Breached via Former Employee’s Account) (U.S. State Government Network Breached via Former Employee’s Account). Once inside, the hackers discovered that this old admin account still had broad access, including to a SharePoint server where another set of admin credentials was stored in plaintext. Using those, they gained domain administrator privileges over on-premises and cloud systems (U.S. State Government Network Breached via Former Employee’s Account). In short, one forgotten account opened the door to the entire network.\nThe consequences were severe. The intruders accessed internal directories and documents containing host and user information, and ultimately posted sensitive data on a dark web marketplace (Top Data Breaches in 2024 [Month-wise] - Strobes). The breach forced an incident response involving state and federal cyber agencies. Fortunately, the attackers did not pivot into the most sensitive cloud systems in this case, but the reputational damage and potential exposure of citizen data were already done. This incident could have been prevented with basic hygiene: promptly disabling departed employees’ accounts, enforcing MFA on VPN/admin logins, and never storing admin passwords in unsecure places. CISA’s advisory on this attack emphasized exactly these points, urging organizations to “remove and disable accounts…no longer needed,” “enable and enforce MFA,” and “store credentials in a secure manner” (Threat Actor Leverages Compromised Account of Former Employee to Access State Government Organization | CISA). In other words, had the agency practiced strict off-boarding and privileged credential management, this breach might never have happened.\nRansomware via Missing MFA at a Healthcare Provider In February 2024, healthcare IT giant Change Healthcare (a subsidiary of UnitedHealth) suffered a massive ransomware attack that disrupted services across U.S. hospitals and insurers (Change Healthcare hacked using stolen Citrix account with no MFA). How did it happen? Attackers from the BlackCat (ALPHV) gang used stolen employee credentials to log into the company’s Citrix remote access portal, which did not have MFA enabled (Change Healthcare hacked using stolen Citrix account with no MFA). In other words, a critical admin gateway was protected only by a password – one the hackers already had from prior data theft malware. With that single factor, the adversaries remotely authenticated as a valid user and immediately sprang deeper into the network.\nWhat followed was nine days of unchecked roaming in the IT environment. Once inside, the attackers moved laterally through systems, quietly exfiltrating about 6 TB of data and ultimately deploying ransomware that brought operations to a standstill (Change Healthcare hacked using stolen Citrix account with no MFA). The impact was enormous: key healthcare services (payment processing, prescription systems, claims platforms) went down, affecting providers and patients nationwide, and the company estimates $872 million in financial damages (Change Healthcare hacked using stolen Citrix account with no MFA). UnitedHealth ultimately paid a ransom (reportedly $22 million) (Change Healthcare hacked using stolen Citrix account with no MFA) to regain control, and had to replace thousands of computers and rebuild its data center from scratch in the aftermath (Change Healthcare hacked using stolen Citrix account with no MFA). This nightmare scenario began from a single missing control – MFA – on an admin remote access point. Had a one-time code or push approval been required, the stolen password alone would have been useless to the attacker, likely thwarting the intrusion at the outset. This case underscores that any externally accessible admin tool must be gated with strong authentication; otherwise, it’s an open invitation to hackers.\nStolen Credentials Exploit Weak Cloud Account Controls Even cutting-edge cloud platforms are not immune to old-school security lapses. In mid-2024, data warehousing firm Snowflake found itself at the center of a multi-organization breach campaign due to customers not enforcing MFA on their Snowflake user accounts (Snowflake Data Breach Sparks MFA Enforcement Urgency). Attackers (eventually linked to the ShinyHunters group) leveraged login credentials stolen via malware as far back as 2020 to access Snowflake accounts at 165 different companies (Public breaches from identity attacks in 2024). Because many of those usernames and passwords had never been changed or secured with MFA, the hackers could simply log in to each target’s cloud data environment with valid credentials. Snowflake’s own systems weren’t breached per se – instead, the attackers piggybacked on weak customer account security.\nThe fallout was widespread. Major enterprises like Ticketmaster, Advance Auto Parts, and Santander Bank were reportedly among the victims (Snowflake Data Breach Sparks MFA Enforcement Urgency) (Snowflake Data Breach Sparks MFA Enforcement Urgency). In total, data on roughly 500 million customers was exposed (Snowflake Data Breach Sparks MFA Enforcement Urgency), ranging from personal information to possibly financial or ticketing records, depending on the company. Some of this stolen data appeared for sale on criminal forums for six-figure prices, and at least one telecom victim paid a ransom to prevent leaks (Public breaches from identity attacks in 2024). Beyond the immediate privacy breach, affected companies faced regulatory scrutiny and loss of customer trust. All of this stemmed from a preventable weakness: allowing critical cloud accounts to operate without enforced MFA or routine password updates. Snowflake’s documentation at the time noted that users had to opt-in to MFA on their own (Snowflake Data Breach Sparks MFA Enforcement Urgency) – a policy gap that has since been widely criticized. This incident has fueled an industry push to mandate MFA for cloud services and to implement checks so that long-dormant or non-compliant accounts can’t be the source of such a breach. Simply put, strong authentication and password management on third-party platforms are just as important as on your in-house systems.\nEven Tech Giants Are Not Immune (Microsoft’s MFA Lesson) If any company understands cybersecurity, it’s Microsoft – yet an oversight with a privileged account led to an embarrassing incident for them as well. In late 2023, a legacy “test” Azure AD account in Microsoft’s corporate network was left without MFA protection and got compromised via a basic password-spraying attack (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget). The Kremlin-linked hacking group APT29 (aka “Midnight Blizzard”/Cozy Bear) simply guessed a weak password on this account, which was an admin tenant account that hadn’t been updated to modern security policies. With that foothold, the attackers elevated their access by exploiting OAuth permissions – essentially tricking the system into giving them a token with full access to Exchange Online mailboxes (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget). Through this, they quietly read the emails of various Microsoft employees, including some senior executives (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget). Even more alarming, Microsoft later revealed that the hackers used information gleaned from those emails to further infiltrate and access some internal source code repositories and systems (Microsoft Confirms Russian Hackers Stole Source Code, Some Customer Secrets).\nFor Microsoft, the incident was a PR black eye: a nation-state actor rifled through sensitive company communications and intellectual property. While the company says no customer data was compromised, the attackers potentially obtained authentication tokens, API keys, and other “secrets” from emails that could be weaponized (Microsoft Confirms Russian Hackers Stole Source Code, Some Customer Secrets) (Microsoft Confirms Russian Hackers Stole Source Code, Some Customer Secrets). Microsoft had to notify over 100 affected external organizations that corresponded with those breached email accounts (Public breaches from identity attacks in 2024). The root cause was plainly acknowledged: the test account did not have multifactor authentication enabled (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget). Microsoft noted that if the same scenario occurred today, their policies would require MFA on such accounts by default (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget). This case drives home that even one forgotten high-privilege account can undermine an entire security program. It’s a lesson to every enterprise: no account is too minor to secure, and “legacy” or service accounts deserve the same protections as primary accounts – otherwise they become the weakest link.\nReducing the Attack Surface: Key Lessons for Executives The stories above may span different industries – government, healthcare, cloud services, tech – but they share common failure points. In each case, a privileged or admin-level account was left inadequately protected, providing attackers an easy initial entry. The damage ranged from multimillion-dollar ransomware incidents to massive data breaches and espionage. The good news is that these attacks were not unstoppable super-hacks; they were preventable with well-known best practices. To avoid being the next victim, executives should ensure their organizations take the following steps to harden privileged accounts and shrink the attack surface:\nEnforce Multi-Factor Authentication Everywhere: Require MFA for all admin and remote access accounts (and ideally all user logins). A second authentication factor would have derailed most of the breaches above. In fact, over 99% of account hacks can be prevented by MFA (Security at your organization - Multifactor authentication (MFA) statistics - Partner Center | Microsoft Learn). Make sure this covers not just employees but also third-party services and legacy accounts. MFA is one of the cheapest, highest-impact defenses available. Harden Password Policies and Eliminate Weak Credentials: Too often, administrators still use weak, default, or reused passwords. One analysis found over 40,000 admin accounts using “admin” as the password in 2023 () – an open door for attackers. Institute strong password requirements (length and complexity) and check new passwords against breach databases to block known leaks. Never reuse passwords across systems, especially for privileged users, and enforce regular rotation or retirement of credentials to mitigate the risk from old leaks. Better yet, consider password managers or moving toward passwordless auth for admins to reduce human error. Limit Admin Account Use and Privileges: Each admin or root account is a high-value target. Reduce their number and scope. Implement the principle of least privilege – admins should have access only to what they absolutely need. Likewise, administrators should use separate non-privileged accounts for email, web browsing, and day-to-day work. This way, if a phishing email or malware attack strikes a regular user inbox, it won’t immediately compromise domain-wide credentials. By segmenting roles and using temporary elevation (just-in-time access) for sensitive tasks, you dramatically cut down the risk that one set of stolen credentials can crater your whole organization. Secure Storage of Credentials: Establish strict policies for how credentials, especially admin passwords and keys, are stored and shared. They should never be stored in plain text on servers, documents, wikis, or email. Use secure credential vaults or privileged access management (PAM) solutions (Threat Actor Leverages Compromised Account of Former Employee to Access State Government Organization | CISA) that enforce encryption, rotation, and controlled access. In the state government breach, an admin password was found on a SharePoint server (U.S. State Government Network Breached via Former Employee’s Account) – equivalent to leaving the keys under the doormat. Don’t let convenience undermine security: invest in proper secret storage and require admins to use it. Rigorous Offboarding and Monitoring: Make account deprovisioning a non-negotiable part of your employee exit process. Dormant accounts (especially with high privileges) should be disabled immediately when personnel leave or roles change. Regularly audit your Active Directory, cloud tenant, and other systems for accounts that haven’t been used in months or belong to former staff (Threat Actor Leverages Compromised Account of Former Employee to Access State Government Organization | CISA). Each unnecessary account is an opportunity for attackers. Similarly, monitor active admin accounts for unusual access patterns – if an account that usually lies idle suddenly logs in from abroad at 2 AM, you want to know and act quickly. Invest in Training and Incident Response Plans: Ensure that even privileged users receive ongoing security awareness training, including how to spot phishing and the importance of safeguarding credentials. Executives should also ask: If an admin account were compromised, do we have the monitoring in place to detect it and a plan to respond rapidly? Tabletop exercises and robust incident response playbooks are critical. In several cases above, attackers lurked for days or weeks before discovery. Speedy detection and response can significantly limit damage.\nBy executing on these key actions, organizations can dramatically reduce the odds that a single password or admin account will be the domino that topples their defenses. The cost of implementing strong authentication and access controls is far less than the cost of cleaning up a breach.\nConclusion High-profile breaches in the last year make one thing clear: privileged account management is a business-critical issue. When an admin account is compromised due to weak controls, attackers gain the “keys to the kingdom” and the fallout can hit finances, operations, and reputation hard. Conversely, companies that proactively tighten their controls – enforcing MFA, using strong unique credentials, minimizing admin access, and protecting those credentials – are far less likely to become a headline for the wrong reasons. As an executive, championing these measures is not just supporting IT best practices, it’s safeguarding the entire enterprise. The incidents we’ve discussed are sobering, but they also highlight a hopeful message: with the right controls in place, these breaches were avoidable. Reducing your attack surface today means fewer fires to fight tomorrow. It’s time to ensure that your organization’s most powerful accounts are also its most secure. Sources:\nCISA Advisory – Threat Actor Leverages Compromised Account of Former Employee (U.S. State Government Network Breached via Former Employee’s Account) (U.S. State Government Network Breached via Former Employee’s Account) BleepingComputer – Change Healthcare hacked using stolen Citrix account with no MFA (Change Healthcare hacked using stolen Citrix account with no MFA) (Change Healthcare hacked using stolen Citrix account with no MFA) Channel Insider – MFA Mandate: Snowflake Doubles Down Amid Attacks (Snowflake Data Breach Sparks MFA Enforcement Urgency) (Snowflake Data Breach Sparks MFA Enforcement Urgency) TechTarget News – Microsoft: Legacy account hacked by Russian APT had no MFA (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget) (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget) The Hacker News – Microsoft Confirms Russian Hackers Stole Source Code (Microsoft Confirms Russian Hackers Stole Source Code, Some Customer Secrets) CISA Best Practices – Actions to take to mitigate malicious activity (Threat Actor Leverages Compromised Account of Former Employee to Access State Government Organization | CISA) Specops 2024 Breached Password Report () (common weak admin passwords) Push Security – Public breaches from identity attacks in 2024 (Public breaches from identity attacks in 2024)\n",
+  "wordCount" : "2580",
+  "inLanguage": "en",
+  "datePublished": "2025-03-14T15:00:08-04:00",
+  "dateModified": "2025-03-14T15:00:08-04:00",
+  "author":[{
+    "@type": "Person",
+    "name": "Jay Klinkowsky"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://everydayidentity.local/2025/03/the-high-cost-of-poor-privileged-account-management/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Everyday Identity",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://everydayidentity.local/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+
+<header class="header">
+  <nav class="nav">
+
+    
+    <div class="logo">
+  
+  
+  <a class="site-logo" href="https://everydayidentity.local/" title="Everyday Identity">
+    <img
+      src="https://everydayidentity.local/images/Everyday_Identity_logo_transparent.png"
+      alt="Everyday Identity"
+      height="40"
+    >
+    Everyday Identity
+  </a>
+  
+</div>
+
+    
+    <ul id="menu">
+        <li>
+          <a href="https://everydayidentity.local/"
+             title="Home">
+            <span>
+              Home
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/posts/"
+             title="Posts">
+            <span>
+              Posts
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/checklists/"
+             title="Checklists">
+            <span>
+              Checklists
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/policies/"
+             title="Policies">
+            <span>
+              Policies
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/categories/"
+             title="Categories">
+            <span>
+              Categories
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/tags/"
+             title="Tags">
+            <span>
+              Tags
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/contact/"
+             title="Contact">
+            <span>
+              Contact
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://everydayidentity.local/"
+             title="">
+            <span>
+              <button id='theme-toggle' aria-label='Toggle theme'></button>
+            </span>
+          </a>
+        </li>
+    </ul>
+
+  </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://everydayidentity.local/">Home</a>&nbsp;»&nbsp;<a href="https://everydayidentity.local/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      The High Cost of Poor Privileged Account Management
+    </h1>
+    <div class="post-meta"><span title='2025-03-14 15:00:08 -0400 EDT'>March 14, 2025</span>&nbsp;·&nbsp;13 min&nbsp;·&nbsp;Jay Klinkowsky
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#an-orphaned-admin-account-leads-to-a-state-government-breach" aria-label="An Orphaned Admin Account Leads to a State Government Breach">An Orphaned Admin Account Leads to a State Government Breach</a></li>
+                <li>
+                    <a href="#ransomware-via-missing-mfa-at-a-healthcare-provider" aria-label="Ransomware via Missing MFA at a Healthcare Provider">Ransomware via Missing MFA at a Healthcare Provider</a></li>
+                <li>
+                    <a href="#stolen-credentials-exploit-weak-cloud-account-controls" aria-label="Stolen Credentials Exploit Weak Cloud Account Controls">Stolen Credentials Exploit Weak Cloud Account Controls</a></li>
+                <li>
+                    <a href="#even-tech-giants-are-not-immune-microsofts-mfa-lesson" aria-label="Even Tech Giants Are Not Immune (Microsoft’s MFA Lesson)">Even Tech Giants Are Not Immune (Microsoft’s MFA Lesson)</a></li>
+                <li>
+                    <a href="#reducing-the-attack-surface-key-lessons-for-executives" aria-label="Reducing the Attack Surface: Key Lessons for Executives">Reducing the Attack Surface: Key Lessons for Executives</a></li>
+                <li>
+                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><img alt="Image" loading="lazy" src="/post_two.png">
+In the past year, several major security breaches were traced back to basic failures in privileged account management. Weak controls on admin-level accounts – from not using multi-factor authentication (MFA) to poor password hygiene – have proven to be low-hanging fruit for attackers. Microsoft reports that over 99.9% of compromised accounts lacked MFA, making them easy targets for password attacks (Security at your organization - Multifactor authentication (MFA) statistics - Partner Center | Microsoft Learn). The incidents below show how such oversights led to serious consequences, and how stricter controls could have prevented the damage. This is a wake-up call for executives: reducing your attack surface by locking down admin access isn’t just IT best practice – it’s vital business protection.</p>
+<h3 id="an-orphaned-admin-account-leads-to-a-state-government-breach">An Orphaned Admin Account Leads to a State Government Breach<a hidden class="anchor" aria-hidden="true" href="#an-orphaned-admin-account-leads-to-a-state-government-breach">#</a></h3>
+<p>One recent breach at a U.S. state government agency started with an administrator account of a former employee that was never deactivated. Attackers obtained the ex-employee’s credentials (likely via a leak from a prior breach) and used them to log in through the agency’s VPN – no MFA was required, so a password alone let them in (U.S. State Government Network Breached via Former Employee’s Account) (U.S. State Government Network Breached via Former Employee’s Account). Once inside, the hackers discovered that this old admin account still had broad access, including to a SharePoint server where another set of admin credentials was stored in plaintext. Using those, they gained domain administrator privileges over on-premises and cloud systems (U.S. State Government Network Breached via Former Employee’s Account). In short, one forgotten account opened the door to the entire network.</p>
+<p>The consequences were severe. The intruders accessed internal directories and documents containing host and user information, and ultimately posted sensitive data on a dark web marketplace (Top Data Breaches in 2024 [Month-wise] - Strobes). The breach forced an incident response involving state and federal cyber agencies. Fortunately, the attackers did not pivot into the most sensitive cloud systems in this case, but the reputational damage and potential exposure of citizen data were already done. This incident could have been prevented with basic hygiene: promptly disabling departed employees’ accounts, enforcing MFA on VPN/admin logins, and never storing admin passwords in unsecure places. CISA’s advisory on this attack emphasized exactly these points, urging organizations to “remove and disable accounts…no longer needed,” “enable and enforce MFA,” and “store credentials in a secure manner” (Threat Actor Leverages Compromised Account of Former Employee to Access State Government Organization | CISA). In other words, had the agency practiced strict off-boarding and privileged credential management, this breach might never have happened.</p>
+<h3 id="ransomware-via-missing-mfa-at-a-healthcare-provider">Ransomware via Missing MFA at a Healthcare Provider<a hidden class="anchor" aria-hidden="true" href="#ransomware-via-missing-mfa-at-a-healthcare-provider">#</a></h3>
+<p>In February 2024, healthcare IT giant Change Healthcare (a subsidiary of UnitedHealth) suffered a massive ransomware attack that disrupted services across U.S. hospitals and insurers (Change Healthcare hacked using stolen Citrix account with no MFA). How did it happen? Attackers from the BlackCat (ALPHV) gang used stolen employee credentials to log into the company’s Citrix remote access portal, which did not have MFA enabled (Change Healthcare hacked using stolen Citrix account with no MFA). In other words, a critical admin gateway was protected only by a password – one the hackers already had from prior data theft malware. With that single factor, the adversaries remotely authenticated as a valid user and immediately sprang deeper into the network.</p>
+<p>What followed was nine days of unchecked roaming in the IT environment. Once inside, the attackers moved laterally through systems, quietly exfiltrating about 6 TB of data and ultimately deploying ransomware that brought operations to a standstill (Change Healthcare hacked using stolen Citrix account with no MFA). The impact was enormous: key healthcare services (payment processing, prescription systems, claims platforms) went down, affecting providers and patients nationwide, and the company estimates $872 million in financial damages (Change Healthcare hacked using stolen Citrix account with no MFA). UnitedHealth ultimately paid a ransom (reportedly $22 million) (Change Healthcare hacked using stolen Citrix account with no MFA) to regain control, and had to replace thousands of computers and rebuild its data center from scratch in the aftermath (Change Healthcare hacked using stolen Citrix account with no MFA). This nightmare scenario began from a single missing control – MFA – on an admin remote access point. Had a one-time code or push approval been required, the stolen password alone would have been useless to the attacker, likely thwarting the intrusion at the outset. This case underscores that any externally accessible admin tool must be gated with strong authentication; otherwise, it’s an open invitation to hackers.</p>
+<h3 id="stolen-credentials-exploit-weak-cloud-account-controls">Stolen Credentials Exploit Weak Cloud Account Controls<a hidden class="anchor" aria-hidden="true" href="#stolen-credentials-exploit-weak-cloud-account-controls">#</a></h3>
+<p>Even cutting-edge cloud platforms are not immune to old-school security lapses. In mid-2024, data warehousing firm Snowflake found itself at the center of a multi-organization breach campaign due to customers not enforcing MFA on their Snowflake user accounts (Snowflake Data Breach Sparks MFA Enforcement Urgency). Attackers (eventually linked to the ShinyHunters group) leveraged login credentials stolen via malware as far back as 2020 to access Snowflake accounts at 165 different companies (Public breaches from identity attacks in 2024). Because many of those usernames and passwords had never been changed or secured with MFA, the hackers could simply log in to each target’s cloud data environment with valid credentials. Snowflake’s own systems weren’t breached per se – instead, the attackers piggybacked on weak customer account security.</p>
+<p>The fallout was widespread. Major enterprises like Ticketmaster, Advance Auto Parts, and Santander Bank were reportedly among the victims (Snowflake Data Breach Sparks MFA Enforcement Urgency) (Snowflake Data Breach Sparks MFA Enforcement Urgency). In total, data on roughly 500 million customers was exposed (Snowflake Data Breach Sparks MFA Enforcement Urgency), ranging from personal information to possibly financial or ticketing records, depending on the company. Some of this stolen data appeared for sale on criminal forums for six-figure prices, and at least one telecom victim paid a ransom to prevent leaks (Public breaches from identity attacks in 2024). Beyond the immediate privacy breach, affected companies faced regulatory scrutiny and loss of customer trust. All of this stemmed from a preventable weakness: allowing critical cloud accounts to operate without enforced MFA or routine password updates. Snowflake’s documentation at the time noted that users had to opt-in to MFA on their own (Snowflake Data Breach Sparks MFA Enforcement Urgency) – a policy gap that has since been widely criticized. This incident has fueled an industry push to mandate MFA for cloud services and to implement checks so that long-dormant or non-compliant accounts can’t be the source of such a breach. Simply put, strong authentication and password management on third-party platforms are just as important as on your in-house systems.</p>
+<h3 id="even-tech-giants-are-not-immune-microsofts-mfa-lesson">Even Tech Giants Are Not Immune (Microsoft’s MFA Lesson)<a hidden class="anchor" aria-hidden="true" href="#even-tech-giants-are-not-immune-microsofts-mfa-lesson">#</a></h3>
+<p>If any company understands cybersecurity, it’s Microsoft – yet an oversight with a privileged account led to an embarrassing incident for them as well. In late 2023, a legacy “test” Azure AD account in Microsoft’s corporate network was left without MFA protection and got compromised via a basic password-spraying attack (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget). The Kremlin-linked hacking group APT29 (aka “Midnight Blizzard”/Cozy Bear) simply guessed a weak password on this account, which was an admin tenant account that hadn’t been updated to modern security policies. With that foothold, the attackers elevated their access by exploiting OAuth permissions – essentially tricking the system into giving them a token with full access to Exchange Online mailboxes (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget). Through this, they quietly read the emails of various Microsoft employees, including some senior executives (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget). Even more alarming, Microsoft later revealed that the hackers used information gleaned from those emails to further infiltrate and access some internal source code repositories and systems (Microsoft Confirms Russian Hackers Stole Source Code, Some Customer Secrets).</p>
+<p>For Microsoft, the incident was a PR black eye: a nation-state actor rifled through sensitive company communications and intellectual property. While the company says no customer data was compromised, the attackers potentially obtained authentication tokens, API keys, and other “secrets” from emails that could be weaponized (Microsoft Confirms Russian Hackers Stole Source Code, Some Customer Secrets) (Microsoft Confirms Russian Hackers Stole Source Code, Some Customer Secrets). Microsoft had to notify over 100 affected external organizations that corresponded with those breached email accounts (Public breaches from identity attacks in 2024). The root cause was plainly acknowledged: the test account did not have multifactor authentication enabled (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget). Microsoft noted that if the same scenario occurred today, their policies would require MFA on such accounts by default (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget). This case drives home that even one forgotten high-privilege account can undermine an entire security program. It’s a lesson to every enterprise: no account is too minor to secure, and “legacy” or service accounts deserve the same protections as primary accounts – otherwise they become the weakest link.</p>
+<h3 id="reducing-the-attack-surface-key-lessons-for-executives">Reducing the Attack Surface: Key Lessons for Executives<a hidden class="anchor" aria-hidden="true" href="#reducing-the-attack-surface-key-lessons-for-executives">#</a></h3>
+<p>The stories above may span different industries – government, healthcare, cloud services, tech – but they share common failure points. In each case, a privileged or admin-level account was left inadequately protected, providing attackers an easy initial entry. The damage ranged from multimillion-dollar ransomware incidents to massive data breaches and espionage. The good news is that these attacks were not unstoppable super-hacks; they were preventable with well-known best practices. To avoid being the next victim, executives should ensure their organizations take the following steps to harden privileged accounts and shrink the attack surface:</p>
+<p>Enforce Multi-Factor Authentication Everywhere: Require MFA for all admin and remote access accounts (and ideally all user logins). A second authentication factor would have derailed most of the breaches above. In fact, over 99% of account hacks can be prevented by MFA (Security at your organization - Multifactor authentication (MFA) statistics - Partner Center | Microsoft Learn). Make sure this covers not just employees but also third-party services and legacy accounts. MFA is one of the cheapest, highest-impact defenses available.
+Harden Password Policies and Eliminate Weak Credentials: Too often, administrators still use weak, default, or reused passwords. One analysis found over 40,000 admin accounts using “admin” as the password in 2023 () – an open door for attackers. Institute strong password requirements (length and complexity) and check new passwords against breach databases to block known leaks. Never reuse passwords across systems, especially for privileged users, and enforce regular rotation or retirement of credentials to mitigate the risk from old leaks. Better yet, consider password managers or moving toward passwordless auth for admins to reduce human error.
+Limit Admin Account Use and Privileges: Each admin or root account is a high-value target. Reduce their number and scope. Implement the principle of least privilege – admins should have access only to what they absolutely need. Likewise, administrators should use separate non-privileged accounts for email, web browsing, and day-to-day work. This way, if a phishing email or malware attack strikes a regular user inbox, it won’t immediately compromise domain-wide credentials. By segmenting roles and using temporary elevation (just-in-time access) for sensitive tasks, you dramatically cut down the risk that one set of stolen credentials can crater your whole organization.
+Secure Storage of Credentials: Establish strict policies for how credentials, especially admin passwords and keys, are stored and shared. They should never be stored in plain text on servers, documents, wikis, or email. Use secure credential vaults or privileged access management (PAM) solutions (Threat Actor Leverages Compromised Account of Former Employee to Access State Government Organization | CISA) that enforce encryption, rotation, and controlled access. In the state government breach, an admin password was found on a SharePoint server (U.S. State Government Network Breached via Former Employee’s Account) – equivalent to leaving the keys under the doormat. Don’t let convenience undermine security: invest in proper secret storage and require admins to use it.
+Rigorous Offboarding and Monitoring: Make account deprovisioning a non-negotiable part of your employee exit process. Dormant accounts (especially with high privileges) should be disabled immediately when personnel leave or roles change. Regularly audit your Active Directory, cloud tenant, and other systems for accounts that haven’t been used in months or belong to former staff (Threat Actor Leverages Compromised Account of Former Employee to Access State Government Organization | CISA). Each unnecessary account is an opportunity for attackers. Similarly, monitor active admin accounts for unusual access patterns – if an account that usually lies idle suddenly logs in from abroad at 2 AM, you want to know and act quickly.
+Invest in Training and Incident Response Plans: Ensure that even privileged users receive ongoing security awareness training, including how to spot phishing and the importance of safeguarding credentials. Executives should also ask: If an admin account were compromised, do we have the monitoring in place to detect it and a plan to respond rapidly? Tabletop exercises and robust incident response playbooks are critical. In several cases above, attackers lurked for days or weeks before discovery. Speedy detection and response can significantly limit damage.</p>
+<p>By executing on these key actions, organizations can dramatically reduce the odds that a single password or admin account will be the domino that topples their defenses. The cost of implementing strong authentication and access controls is far less than the cost of cleaning up a breach.</p>
+<h3 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h3>
+<p>High-profile breaches in the last year make one thing clear: privileged account management is a business-critical issue. When an admin account is compromised due to weak controls, attackers gain the “keys to the kingdom” and the fallout can hit finances, operations, and reputation hard. Conversely, companies that proactively tighten their controls – enforcing MFA, using strong unique credentials, minimizing admin access, and protecting those credentials – are far less likely to become a headline for the wrong reasons. As an executive, championing these measures is not just supporting IT best practices, it’s safeguarding the entire enterprise. The incidents we’ve discussed are sobering, but they also highlight a hopeful message: with the right controls in place, these breaches were avoidable. Reducing your attack surface today means fewer fires to fight tomorrow. It’s time to ensure that your organization’s most powerful accounts are also its most secure.
+Sources:</p>
+<p><em>CISA Advisory – Threat Actor Leverages Compromised Account of Former Employee (U.S. State Government Network Breached via Former Employee’s Account) (U.S. State Government Network Breached via Former Employee’s Account)
+BleepingComputer – Change Healthcare hacked using stolen Citrix account with no MFA (Change Healthcare hacked using stolen Citrix account with no MFA) (Change Healthcare hacked using stolen Citrix account with no MFA)
+Channel Insider – MFA Mandate: Snowflake Doubles Down Amid Attacks (Snowflake Data Breach Sparks MFA Enforcement Urgency) (Snowflake Data Breach Sparks MFA Enforcement Urgency)
+TechTarget News – Microsoft: Legacy account hacked by Russian APT had no MFA (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget) (Microsoft: Legacy account hacked by Russian APT had no MFA | TechTarget)
+The Hacker News – Microsoft Confirms Russian Hackers Stole Source Code (Microsoft Confirms Russian Hackers Stole Source Code, Some Customer Secrets)
+CISA Best Practices – Actions to take to mitigate malicious activity (Threat Actor Leverages Compromised Account of Former Employee to Access State Government Organization | CISA)
+Specops 2024 Breached Password Report () (common weak admin passwords)
+Push Security – Public breaches from identity attacks in 2024 (Public breaches from identity attacks in 2024)</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://everydayidentity.local/tags/pam/">PAM</a></li>
+      <li><a href="https://everydayidentity.local/tags/cost-analysis/">Cost Analysis</a></li>
+      <li><a href="https://everydayidentity.local/tags/risk-management/">Risk Management</a></li>
+      <li><a href="https://everydayidentity.local/tags/account-governance/">Account Governance</a></li>
+      <li><a href="https://everydayidentity.local/tags/compliance/">Compliance</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://everydayidentity.local/2025/03/passwords-in-the-wild/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Passwords in the Wild</span>
+  </a>
+  <a class="next" href="https://everydayidentity.local/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Zero Trust Human: Never Trust a Ping Without a Proof</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://everydayidentity.local/">Everyday Identity</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

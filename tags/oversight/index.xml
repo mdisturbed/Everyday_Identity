@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Oversight on Everyday Identity</title>
-    <link>https://everydayidentity.local/tags/oversight/</link>
+    <link>https://mdisturbed.github.io/Everyday_Identity/tags/oversight/</link>
     <description>Recent content in Oversight on Everyday Identity</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Apr 2025 09:00:00 -0400</lastBuildDate>
-    <atom:link href="https://everydayidentity.local/tags/oversight/index.xml" rel="self" type="application/rss" />
+    <atom:link href="https://mdisturbed.github.io/Everyday_Identity/tags/oversight/index.xml" rel="self" type="application/rss" />
     <item>
       <title>Responsible Use of AI and Checks &amp; Balances</title>
-      <link>https://everydayidentity.local/2025/04/responsible-use-of-ai-and-checks-balances/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/04/responsible-use-of-ai-and-checks-balances/</link>
       <pubDate>Wed, 23 Apr 2025 09:00:00 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/04/responsible-use-of-ai-and-checks-balances/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_six.png&#34;&gt;&lt;/p&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/04/responsible-use-of-ai-and-checks-balances/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_six.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;responsible-use-of-ai-and-checks--balances&#34;&gt;Responsible Use of AI and Checks &amp;amp; Balances&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In the first part of this series, we examined the mounting risks that come with using AI in financial documentation and identity workflows. From deepfake-enabled fraud to AI-generated receipts that are indistinguishable from real ones, it’s clear that relying too heavily on automation can undermine trust, integrity, and security.&lt;/p&gt;
@@ -199,10 +199,10 @@
     </item>
     <item>
       <title>Zero Trust Human: Never Trust a Ping Without a Proof</title>
-      <link>https://everydayidentity.local/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</link>
       <pubDate>Mon, 03 Mar 2025 09:00:00 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_one.png&#34;&gt;&lt;/p&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_one.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In an age where our devices buzz, beep, and flash with endless notifications, it’s tempting to trust at face value. A text claims your package is delayed. An email warns your bank account is locked. A call demands payment for unpaid taxes. But what if we treated every one of these with unrelenting suspicion? Welcome to the &amp;ldquo;Zero Trust Human&amp;rdquo; theory—a mindset that demands verification before action, especially as AI hacks in 2025 make deception smarter than ever.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img alt="Image" loading="lazy" src="/post_one.png"></p>
 <p>In an age where our devices buzz, beep, and flash with endless notifications, it’s tempting to trust at face value. A text claims your package is delayed. An email warns your bank account is locked. A call demands payment for unpaid taxes. But what if we treated every one of these with unrelenting suspicion? Welcome to the &ldquo;Zero Trust Human&rdquo; theory—a mindset that demands verification before action, especially as AI hacks in 2025 make deception smarter than ever.</p>

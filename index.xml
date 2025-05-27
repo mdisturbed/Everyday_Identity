@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Welcome to Everyday Identity on Everyday Identity</title>
-    <link>https://everydayidentity.local/</link>
+    <link>https://mdisturbed.github.io/Everyday_Identity/</link>
     <description>Recent content in Welcome to Everyday Identity on Everyday Identity</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://everydayidentity.local/index.xml" rel="self" type="application/rss" />
+    <atom:link href="https://mdisturbed.github.io/Everyday_Identity/index.xml" rel="self" type="application/rss" />
     <item>
       <title>IAM 101: RBAC, ABAC, and PBAC – Choosing the Right Access Model</title>
-      <link>https://everydayidentity.local/2025/05/iam-101-rbac-abac-and-pbac-choosing-the-right-access-model/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-rbac-abac-and-pbac-choosing-the-right-access-model/</link>
       <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://everydayidentity.local/2025/05/iam-101-rbac-abac-and-pbac-choosing-the-right-access-model/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-rbac-abac-and-pbac-choosing-the-right-access-model/</guid>
       <description>Understand the strengths, weaknesses, and real-world use cases of RBAC, ABAC, and PBAC—and how to choose the right access model for your organization.</description>
       <content:encoded><![CDATA[<p><img alt="Access Control Model Illustration" loading="lazy" src="/images/post_access_models.png"></p>
 <h1 id="iam-101-rbac-abac-and-pbac--choosing-the-right-access-model">IAM 101: RBAC, ABAC, and PBAC – Choosing the Right Access Model</h1>
@@ -181,9 +181,9 @@
     </item>
     <item>
       <title>Zero Trust Readiness Quiz</title>
-      <link>https://everydayidentity.local/2025/05/zero-trust-readiness-quiz/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/05/zero-trust-readiness-quiz/</link>
       <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://everydayidentity.local/2025/05/zero-trust-readiness-quiz/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/05/zero-trust-readiness-quiz/</guid>
       <description>Assess your organization’s Zero Trust maturity with this quick, ten‑question readiness quiz. Identify gaps across asset inventory, least‑privilege, continuous monitoring, and more—then use our proven checklist methodology to prioritize your next security improvements.</description>
       <content:encoded><![CDATA[<p><strong>TL;DR</strong><br>
 Feeling confident in your organization’s Zero Trust posture? This “Zero Trust Readiness Quiz” leverages the same practical checklist approach I’ve used across enterprises, SMBs, and personal environments to help you gauge where you stand across the seven tenets of Zero Trust defined by NIST SP 800‑207 and CISA’s Zero Trust Maturity Model. Answer ten quick checklist questions about your asset inventory, least‑privilege policies, continuous monitoring, and more. Score your results to identify gaps and prioritize your next steps. (SEO keywords: GPT prompts for SEO)</p>
@@ -274,9 +274,9 @@ Zero Trust is a journey, not a destination. Schedule quarterly reviews of your r
     </item>
     <item>
       <title>IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</title>
-      <link>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</link>
       <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</guid>
       <description>Lifecycle management is the foundation of secure and efficient IAM. This post explores how to get Joiners, Movers, and Leavers (JML) right with automation, policy, and governance.</description>
       <content:encoded><![CDATA[<p><img alt="Lifecycle Management Illustration" loading="lazy" src="/images/post_lifecycle.png"></p>
 <h1 id="iam-101-lifecycle-management--joiners-movers-and-leavers-done-right">IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</h1>
@@ -456,9 +456,9 @@ Zero Trust is a journey, not a destination. Schedule quarterly reviews of your r
     </item>
     <item>
       <title>IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</title>
-      <link>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</link>
       <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</guid>
       <description>Lifecycle management is the foundation of secure and efficient IAM. This post explores how to get Joiners, Movers, and Leavers (JML) right with automation, policy, and governance.</description>
       <content:encoded><![CDATA[<p><img alt="Lifecycle Management Illustration" loading="lazy" src="/images/post_lifecycle.png"></p>
 <h1 id="iam-101-lifecycle-management--joiners-movers-and-leavers-done-right">IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</h1>
@@ -647,9 +647,9 @@ Zero Trust is a journey, not a destination. Schedule quarterly reviews of your r
     </item>
     <item>
       <title>IAM 101: Authentication Explained – The Front Door to Your Digital World</title>
-      <link>https://everydayidentity.local/2025/05/iam-101-authentication-explained-the-front-door-to-your-digital-world/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-authentication-explained-the-front-door-to-your-digital-world/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://everydayidentity.local/2025/05/iam-101-authentication-explained-the-front-door-to-your-digital-world/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-authentication-explained-the-front-door-to-your-digital-world/</guid>
       <description>Authentication is the first line of defense in IAM. Learn how it works, why it matters, and how IT professionals can implement it correctly in a Zero Trust world.</description>
       <content:encoded><![CDATA[<p><img alt="Authentication Front Door Illustration" loading="lazy" src="/images/post_authentication.png"></p>
 <h1 id="iam-101-authentication-explained--the-front-door-to-your-digital-world">IAM 101: Authentication Explained – The Front Door to Your Digital World</h1>
@@ -814,9 +814,9 @@ Zero Trust is a journey, not a destination. Schedule quarterly reviews of your r
     </item>
     <item>
       <title>IAM 101: What is Identity and Access Management (IAM)?</title>
-      <link>https://everydayidentity.local/2025/05/iam-101-what-is-identity-and-access-management-iam/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-what-is-identity-and-access-management-iam/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://everydayidentity.local/2025/05/iam-101-what-is-identity-and-access-management-iam/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-what-is-identity-and-access-management-iam/</guid>
       <description>Kick off our IAM 101 series by exploring what Identity and Access Management really is, why it matters, and how it impacts every organization today.</description>
       <content:encoded><![CDATA[<p><img alt="IAM Identity Overview" loading="lazy" src="/images/post_eight.png"></p>
 <h1 id="iam-101-what-is-identity-and-access-management-iam">IAM 101: What is Identity and Access Management (IAM)?</h1>
@@ -914,10 +914,10 @@ Use <strong>GPT prompts for SEO</strong> (even in IT contexts) to:</p>
     </item>
     <item>
       <title>Common IAM Misconfigurations and How to Avoid Them</title>
-      <link>https://everydayidentity.local/2025/04/common-iam-misconfigurations-and-how-to-avoid-them/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/04/common-iam-misconfigurations-and-how-to-avoid-them/</link>
       <pubDate>Wed, 30 Apr 2025 09:00:00 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/04/common-iam-misconfigurations-and-how-to-avoid-them/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_seven.png&#34;&gt;&lt;/p&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/04/common-iam-misconfigurations-and-how-to-avoid-them/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_seven.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;Identity and Access Management (IAM) is the foundation of organizational security. Yet, even the most well-intentioned IAM deployments are riddled with misconfigurations that open dangerous backdoors for attackers. In today’s cloud-first and hybrid work environments, a single oversight in IAM can lead to data breaches, compliance violations, and business disruptions.&lt;/p&gt;
 &lt;p&gt;In this article, we’ll walk through the most common IAM misconfigurations—and how to avoid them using practical strategies, with real-world examples to highlight the risks.&lt;/p&gt;</description>
@@ -1025,10 +1025,10 @@ A penetration test revealed that weak IAM policy configurations enabled unauthor
     </item>
     <item>
       <title>Responsible Use of AI and Checks &amp; Balances</title>
-      <link>https://everydayidentity.local/2025/04/responsible-use-of-ai-and-checks-balances/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/04/responsible-use-of-ai-and-checks-balances/</link>
       <pubDate>Wed, 23 Apr 2025 09:00:00 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/04/responsible-use-of-ai-and-checks-balances/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_six.png&#34;&gt;&lt;/p&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/04/responsible-use-of-ai-and-checks-balances/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_six.png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;responsible-use-of-ai-and-checks--balances&#34;&gt;Responsible Use of AI and Checks &amp;amp; Balances&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In the first part of this series, we examined the mounting risks that come with using AI in financial documentation and identity workflows. From deepfake-enabled fraud to AI-generated receipts that are indistinguishable from real ones, it’s clear that relying too heavily on automation can undermine trust, integrity, and security.&lt;/p&gt;
@@ -1214,10 +1214,10 @@ A penetration test revealed that weak IAM policy configurations enabled unauthor
     </item>
     <item>
       <title>The Hidden Dangers of AI in Receipts and Identity Workflows</title>
-      <link>https://everydayidentity.local/2025/04/the-hidden-dangers-of-ai-in-receipts-and-identity-workflows/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/04/the-hidden-dangers-of-ai-in-receipts-and-identity-workflows/</link>
       <pubDate>Wed, 16 Apr 2025 09:00:00 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/04/the-hidden-dangers-of-ai-in-receipts-and-identity-workflows/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_six.png&#34;&gt;&lt;/p&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/04/the-hidden-dangers-of-ai-in-receipts-and-identity-workflows/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_six.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;From self-generating invoices to automated ID verification, AI is quickly becoming a foundational tool in business operations, security protocols, and digital transactions. Organizations use AI to process documents, detect anomalies, and streamline workflows—boosting speed and reducing human error. But there&amp;rsquo;s a darker side.&lt;/p&gt;
 &lt;p&gt;When these systems are deployed without adequate oversight, they can be exploited by threat actors or produce flawed outcomes at scale. This blog post explores how AI-generated receipts and identity automation can lead to data fraud, compliance violations, and systemic vulnerabilities—especially in the absence of human checks and balances. We&amp;rsquo;ll examine real-world examples of deepfake attacks, biased verification systems, and AI-forged documents to shed light on why these issues demand urgent attention.&lt;/p&gt;</description>
@@ -1292,10 +1292,10 @@ A penetration test revealed that weak IAM policy configurations enabled unauthor
     </item>
     <item>
       <title>Ai Pii Privacy Risks</title>
-      <link>https://everydayidentity.local/2025/03/ai-pii-privacy-risks/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/03/ai-pii-privacy-risks/</link>
       <pubDate>Sun, 30 Mar 2025 20:47:10 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/03/ai-pii-privacy-risks/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_four.png&#34;&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/03/ai-pii-privacy-risks/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_four.png&#34;&gt;
 In today&amp;rsquo;s digital age, artificial intelligence (AI) has become increasingly mainstream, shaping everything from how we search online to how we interact with technology daily. However, as AI grows more prevalent, concerns about privacy, particularly regarding personally identifiable information (PII), have emerged as critical issues that users must understand.&lt;/p&gt;
 &lt;p&gt;Mainstream AI tools, such as conversational AI assistants (e.g., ChatGPT, Google Bard) and generative AI platforms (e.g., Midjourney, DALL-E), rely heavily on data gathered from the internet. These AI models are trained using massive datasets, including text from websites, social media, forums, and publicly available records. For instance, Clearview AI, a facial recognition startup, was trained using billions of images scraped from social media and websites, raising significant privacy concerns (Source: The New York Times, 2020).&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img alt="Image" loading="lazy" src="/post_four.png">
@@ -1331,9 +1331,9 @@ In today&rsquo;s digital age, artificial intelligence (AI) has become increasing
     </item>
     <item>
       <title>Comprehensive Password and 2FA Identity Policy</title>
-      <link>https://everydayidentity.local/policies/comprehensive-password-and-2fa-identity-policy/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/policies/comprehensive-password-and-2fa-identity-policy/</link>
       <pubDate>Sun, 30 Mar 2025 20:47:10 -0400</pubDate>
-      <guid>https://everydayidentity.local/policies/comprehensive-password-and-2fa-identity-policy/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/policies/comprehensive-password-and-2fa-identity-policy/</guid>
       <description>&lt;h2 id=&#34;password-requirements&#34;&gt;Password Requirements&lt;/h2&gt;
 &lt;h3 id=&#34;password-composition&#34;&gt;Password Composition&lt;/h3&gt;
 &lt;ul&gt;
@@ -2012,10 +2012,10 @@ In today&rsquo;s digital age, artificial intelligence (AI) has become increasing
     </item>
     <item>
       <title>Passwords in the Wild</title>
-      <link>https://everydayidentity.local/2025/03/passwords-in-the-wild/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/03/passwords-in-the-wild/</link>
       <pubDate>Tue, 18 Mar 2025 15:05:44 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/03/passwords-in-the-wild/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_three.png&#34;&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/03/passwords-in-the-wild/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_three.png&#34;&gt;
 In today&amp;rsquo;s digital age, protecting your online identity and personal information has become more crucial than ever. Cyber threats are continually evolving, and one of the most effective ways to safeguard yourself against these risks is by practicing excellent password hygiene. Here&amp;rsquo;s why it matters and what steps you can take to ensure your passwords are strong and secure.&lt;/p&gt;
 &lt;h3 id=&#34;why-password-hygiene-matters&#34;&gt;Why Password Hygiene Matters&lt;/h3&gt;
 &lt;p&gt;Every day, cybercriminals attempt to exploit weak passwords to gain unauthorized access to sensitive personal, financial, and professional information. According to Verizon’s 2023 Data Breach Investigations Report, compromised passwords account for 81% of hacking-related breaches. Poor password practices can lead to identity theft, financial losses, and even damage to your reputation. Adopting robust password habits drastically reduces your vulnerability and helps ensure your digital safety.&lt;/p&gt;</description>
@@ -2053,10 +2053,10 @@ Protect your digital identity today—make excellent password hygiene a non-nego
     </item>
     <item>
       <title>The High Cost of Poor Privileged Account Management</title>
-      <link>https://everydayidentity.local/2025/03/the-high-cost-of-poor-privileged-account-management/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/03/the-high-cost-of-poor-privileged-account-management/</link>
       <pubDate>Fri, 14 Mar 2025 15:00:08 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/03/the-high-cost-of-poor-privileged-account-management/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_two.png&#34;&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/03/the-high-cost-of-poor-privileged-account-management/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_two.png&#34;&gt;
 In the past year, several major security breaches were traced back to basic failures in privileged account management. Weak controls on admin-level accounts – from not using multi-factor authentication (MFA) to poor password hygiene – have proven to be low-hanging fruit for attackers. Microsoft reports that over 99.9% of compromised accounts lacked MFA, making them easy targets for password attacks (Security at your organization - Multifactor authentication (MFA) statistics - Partner Center | Microsoft Learn). The incidents below show how such oversights led to serious consequences, and how stricter controls could have prevented the damage. This is a wake-up call for executives: reducing your attack surface by locking down admin access isn’t just IT best practice – it’s vital business protection.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img alt="Image" loading="lazy" src="/post_two.png">
 In the past year, several major security breaches were traced back to basic failures in privileged account management. Weak controls on admin-level accounts – from not using multi-factor authentication (MFA) to poor password hygiene – have proven to be low-hanging fruit for attackers. Microsoft reports that over 99.9% of compromised accounts lacked MFA, making them easy targets for password attacks (Security at your organization - Multifactor authentication (MFA) statistics - Partner Center | Microsoft Learn). The incidents below show how such oversights led to serious consequences, and how stricter controls could have prevented the damage. This is a wake-up call for executives: reducing your attack surface by locking down admin access isn’t just IT best practice – it’s vital business protection.</p>
@@ -2096,10 +2096,10 @@ Push Security – Public breaches from identity attacks in 2024 (Public breaches
     </item>
     <item>
       <title>Zero Trust Human: Never Trust a Ping Without a Proof</title>
-      <link>https://everydayidentity.local/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</link>
       <pubDate>Mon, 03 Mar 2025 09:00:00 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_one.png&#34;&gt;&lt;/p&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_one.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In an age where our devices buzz, beep, and flash with endless notifications, it’s tempting to trust at face value. A text claims your package is delayed. An email warns your bank account is locked. A call demands payment for unpaid taxes. But what if we treated every one of these with unrelenting suspicion? Welcome to the &amp;ldquo;Zero Trust Human&amp;rdquo; theory—a mindset that demands verification before action, especially as AI hacks in 2025 make deception smarter than ever.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img alt="Image" loading="lazy" src="/post_one.png"></p>
 <p>In an age where our devices buzz, beep, and flash with endless notifications, it’s tempting to trust at face value. A text claims your package is delayed. An email warns your bank account is locked. A call demands payment for unpaid taxes. But what if we treated every one of these with unrelenting suspicion? Welcome to the &ldquo;Zero Trust Human&rdquo; theory—a mindset that demands verification before action, especially as AI hacks in 2025 make deception smarter than ever.</p>

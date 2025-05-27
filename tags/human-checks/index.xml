@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Human Checks on Everyday Identity</title>
-    <link>https://everydayidentity.local/tags/human-checks/</link>
+    <link>https://mdisturbed.github.io/Everyday_Identity/tags/human-checks/</link>
     <description>Recent content in Human Checks on Everyday Identity</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 16 Apr 2025 09:00:00 -0400</lastBuildDate>
-    <atom:link href="https://everydayidentity.local/tags/human-checks/index.xml" rel="self" type="application/rss" />
+    <atom:link href="https://mdisturbed.github.io/Everyday_Identity/tags/human-checks/index.xml" rel="self" type="application/rss" />
     <item>
       <title>The Hidden Dangers of AI in Receipts and Identity Workflows</title>
-      <link>https://everydayidentity.local/2025/04/the-hidden-dangers-of-ai-in-receipts-and-identity-workflows/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/04/the-hidden-dangers-of-ai-in-receipts-and-identity-workflows/</link>
       <pubDate>Wed, 16 Apr 2025 09:00:00 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/04/the-hidden-dangers-of-ai-in-receipts-and-identity-workflows/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_six.png&#34;&gt;&lt;/p&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/04/the-hidden-dangers-of-ai-in-receipts-and-identity-workflows/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_six.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;From self-generating invoices to automated ID verification, AI is quickly becoming a foundational tool in business operations, security protocols, and digital transactions. Organizations use AI to process documents, detect anomalies, and streamline workflows—boosting speed and reducing human error. But there&amp;rsquo;s a darker side.&lt;/p&gt;
 &lt;p&gt;When these systems are deployed without adequate oversight, they can be exploited by threat actors or produce flawed outcomes at scale. This blog post explores how AI-generated receipts and identity automation can lead to data fraud, compliance violations, and systemic vulnerabilities—especially in the absence of human checks and balances. We&amp;rsquo;ll examine real-world examples of deepfake attacks, biased verification systems, and AI-forged documents to shed light on why these issues demand urgent attention.&lt;/p&gt;</description>
@@ -88,10 +88,10 @@
     </item>
     <item>
       <title>Zero Trust Human: Never Trust a Ping Without a Proof</title>
-      <link>https://everydayidentity.local/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</link>
       <pubDate>Mon, 03 Mar 2025 09:00:00 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_one.png&#34;&gt;&lt;/p&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_one.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In an age where our devices buzz, beep, and flash with endless notifications, it’s tempting to trust at face value. A text claims your package is delayed. An email warns your bank account is locked. A call demands payment for unpaid taxes. But what if we treated every one of these with unrelenting suspicion? Welcome to the &amp;ldquo;Zero Trust Human&amp;rdquo; theory—a mindset that demands verification before action, especially as AI hacks in 2025 make deception smarter than ever.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img alt="Image" loading="lazy" src="/post_one.png"></p>
 <p>In an age where our devices buzz, beep, and flash with endless notifications, it’s tempting to trust at face value. A text claims your package is delayed. An email warns your bank account is locked. A call demands payment for unpaid taxes. But what if we treated every one of these with unrelenting suspicion? Welcome to the &ldquo;Zero Trust Human&rdquo; theory—a mindset that demands verification before action, especially as AI hacks in 2025 make deception smarter than ever.</p>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Beginner Guide on Everyday Identity</title>
-    <link>https://everydayidentity.local/tags/beginner-guide/</link>
+    <link>https://mdisturbed.github.io/Everyday_Identity/tags/beginner-guide/</link>
     <description>Recent content in Beginner Guide on Everyday Identity</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://everydayidentity.local/tags/beginner-guide/index.xml" rel="self" type="application/rss" />
+    <atom:link href="https://mdisturbed.github.io/Everyday_Identity/tags/beginner-guide/index.xml" rel="self" type="application/rss" />
     <item>
       <title>IAM 101: What is Identity and Access Management (IAM)?</title>
-      <link>https://everydayidentity.local/2025/05/iam-101-what-is-identity-and-access-management-iam/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-what-is-identity-and-access-management-iam/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://everydayidentity.local/2025/05/iam-101-what-is-identity-and-access-management-iam/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-what-is-identity-and-access-management-iam/</guid>
       <description>Kick off our IAM 101 series by exploring what Identity and Access Management really is, why it matters, and how it impacts every organization today.</description>
       <content:encoded><![CDATA[<p><img alt="IAM Identity Overview" loading="lazy" src="/images/post_eight.png"></p>
 <h1 id="iam-101-what-is-identity-and-access-management-iam">IAM 101: What is Identity and Access Management (IAM)?</h1>

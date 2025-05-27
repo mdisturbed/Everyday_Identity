@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>User Provisioning on Everyday Identity</title>
-    <link>https://everydayidentity.local/tags/user-provisioning/</link>
+    <link>https://mdisturbed.github.io/Everyday_Identity/tags/user-provisioning/</link>
     <description>Recent content in User Provisioning on Everyday Identity</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://everydayidentity.local/tags/user-provisioning/index.xml" rel="self" type="application/rss" />
+    <atom:link href="https://mdisturbed.github.io/Everyday_Identity/tags/user-provisioning/index.xml" rel="self" type="application/rss" />
     <item>
       <title>IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</title>
-      <link>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</link>
       <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</guid>
       <description>Lifecycle management is the foundation of secure and efficient IAM. This post explores how to get Joiners, Movers, and Leavers (JML) right with automation, policy, and governance.</description>
       <content:encoded><![CDATA[<p><img alt="Lifecycle Management Illustration" loading="lazy" src="/images/post_lifecycle.png"></p>
 <h1 id="iam-101-lifecycle-management--joiners-movers-and-leavers-done-right">IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</h1>
@@ -192,9 +192,9 @@
     </item>
     <item>
       <title>IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</title>
-      <link>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</link>
       <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://everydayidentity.local/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/05/iam-101-lifecycle-management-joiners-movers-and-leavers-done-right/</guid>
       <description>Lifecycle management is the foundation of secure and efficient IAM. This post explores how to get Joiners, Movers, and Leavers (JML) right with automation, policy, and governance.</description>
       <content:encoded><![CDATA[<p><img alt="Lifecycle Management Illustration" loading="lazy" src="/images/post_lifecycle.png"></p>
 <h1 id="iam-101-lifecycle-management--joiners-movers-and-leavers-done-right">IAM 101: Lifecycle Management – Joiners, Movers, and Leavers Done Right</h1>

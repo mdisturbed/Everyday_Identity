@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Zero Trust on Everyday Identity</title>
-    <link>https://everydayidentity.local/categories/zero-trust/</link>
+    <link>https://mdisturbed.github.io/Everyday_Identity/categories/zero-trust/</link>
     <description>Recent content in Zero Trust on Everyday Identity</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://everydayidentity.local/categories/zero-trust/index.xml" rel="self" type="application/rss" />
+    <atom:link href="https://mdisturbed.github.io/Everyday_Identity/categories/zero-trust/index.xml" rel="self" type="application/rss" />
     <item>
       <title>Zero Trust Readiness Quiz</title>
-      <link>https://everydayidentity.local/2025/05/zero-trust-readiness-quiz/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/05/zero-trust-readiness-quiz/</link>
       <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://everydayidentity.local/2025/05/zero-trust-readiness-quiz/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/05/zero-trust-readiness-quiz/</guid>
       <description>Assess your organization’s Zero Trust maturity with this quick, ten‑question readiness quiz. Identify gaps across asset inventory, least‑privilege, continuous monitoring, and more—then use our proven checklist methodology to prioritize your next security improvements.</description>
       <content:encoded><![CDATA[<p><strong>TL;DR</strong><br>
 Feeling confident in your organization’s Zero Trust posture? This “Zero Trust Readiness Quiz” leverages the same practical checklist approach I’ve used across enterprises, SMBs, and personal environments to help you gauge where you stand across the seven tenets of Zero Trust defined by NIST SP 800‑207 and CISA’s Zero Trust Maturity Model. Answer ten quick checklist questions about your asset inventory, least‑privilege policies, continuous monitoring, and more. Score your results to identify gaps and prioritize your next steps. (SEO keywords: GPT prompts for SEO)</p>
@@ -103,10 +103,10 @@ Zero Trust is a journey, not a destination. Schedule quarterly reviews of your r
     </item>
     <item>
       <title>Zero Trust Human: Never Trust a Ping Without a Proof</title>
-      <link>https://everydayidentity.local/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</link>
       <pubDate>Mon, 03 Mar 2025 09:00:00 -0400</pubDate>
-      <guid>https://everydayidentity.local/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://everydayidentity.local/post_one.png&#34;&gt;&lt;/p&gt;
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/03/zero-trust-human-never-trust-a-ping-without-a-proof/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image&#34; loading=&#34;lazy&#34; src=&#34;https://mdisturbed.github.io/Everyday_Identity/post_one.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In an age where our devices buzz, beep, and flash with endless notifications, it’s tempting to trust at face value. A text claims your package is delayed. An email warns your bank account is locked. A call demands payment for unpaid taxes. But what if we treated every one of these with unrelenting suspicion? Welcome to the &amp;ldquo;Zero Trust Human&amp;rdquo; theory—a mindset that demands verification before action, especially as AI hacks in 2025 make deception smarter than ever.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><img alt="Image" loading="lazy" src="/post_one.png"></p>
 <p>In an age where our devices buzz, beep, and flash with endless notifications, it’s tempting to trust at face value. A text claims your package is delayed. An email warns your bank account is locked. A call demands payment for unpaid taxes. But what if we treated every one of these with unrelenting suspicion? Welcome to the &ldquo;Zero Trust Human&rdquo; theory—a mindset that demands verification before action, especially as AI hacks in 2025 make deception smarter than ever.</p>

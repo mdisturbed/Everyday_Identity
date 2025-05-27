@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Checklist on Everyday Identity</title>
-    <link>https://everydayidentity.local/tags/checklist/</link>
+    <link>https://mdisturbed.github.io/Everyday_Identity/tags/checklist/</link>
     <description>Recent content in Checklist on Everyday Identity</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://everydayidentity.local/tags/checklist/index.xml" rel="self" type="application/rss" />
+    <atom:link href="https://mdisturbed.github.io/Everyday_Identity/tags/checklist/index.xml" rel="self" type="application/rss" />
     <item>
       <title>Zero Trust Readiness Quiz</title>
-      <link>https://everydayidentity.local/2025/05/zero-trust-readiness-quiz/</link>
+      <link>https://mdisturbed.github.io/Everyday_Identity/2025/05/zero-trust-readiness-quiz/</link>
       <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://everydayidentity.local/2025/05/zero-trust-readiness-quiz/</guid>
+      <guid>https://mdisturbed.github.io/Everyday_Identity/2025/05/zero-trust-readiness-quiz/</guid>
       <description>Assess your organization’s Zero Trust maturity with this quick, ten‑question readiness quiz. Identify gaps across asset inventory, least‑privilege, continuous monitoring, and more—then use our proven checklist methodology to prioritize your next security improvements.</description>
       <content:encoded><![CDATA[<p><strong>TL;DR</strong><br>
 Feeling confident in your organization’s Zero Trust posture? This “Zero Trust Readiness Quiz” leverages the same practical checklist approach I’ve used across enterprises, SMBs, and personal environments to help you gauge where you stand across the seven tenets of Zero Trust defined by NIST SP 800‑207 and CISA’s Zero Trust Maturity Model. Answer ten quick checklist questions about your asset inventory, least‑privilege policies, continuous monitoring, and more. Score your results to identify gaps and prioritize your next steps. (SEO keywords: GPT prompts for SEO)</p>
